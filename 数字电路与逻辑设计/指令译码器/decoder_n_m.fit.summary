@@ -1,0 +1,12 @@
+Fitter Status : Successful - Sat Nov 02 18:49:38 2019
+Quartus II Version : 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+Revision Name : decoder_n_m
+Top-level Entity Name : decoder_n_m
+Family : Cyclone
+Device : EP1C3T144C8
+Timing Models : Final
+Total logic elements : 45 / 2,910 ( 2 % )
+Total pins : 25 / 104 ( 24 % )
+Total virtual pins : 0
+Total memory bits : 0 / 59,904 ( 0 % )
+Total PLLs : 0 / 1 ( 0 % )

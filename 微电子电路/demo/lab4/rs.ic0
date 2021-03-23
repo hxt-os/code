@@ -1,0 +1,27 @@
+* "simulator" "HSPICE" 
+* "version" "G-2012.06-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "09:59:07 12/19/2018 "
+* "netlist" "rs.sp "
+* "runtitle" ".temp 25.0000"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc= 1.000e-12       
+.nodeset
++ 1 =   1.8000        
++ clk =   0.            
++ out1 =   1.8000        
++ out2 =   1.8000        
++ q =   0.7532        
++ qf =   0.7532        
++ r =   0.            
++ s =   0.            
++ temp1 = 7.927e-09       
++ temp2 = 7.927e-09       
++ x1.vn = 3.597e-02       
++ x3.vn =   1.7042        
++ x4.vn = 3.597e-02       
++ x6.vn =   1.7042        
+***   END: Saved Operating Point ***                     

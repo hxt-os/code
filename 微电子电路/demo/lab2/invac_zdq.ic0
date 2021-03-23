@@ -1,0 +1,17 @@
+* "simulator" "HSPICE" 
+* "version" "G-2012.06-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "23:49:40 12/04/2018 "
+* "netlist" "invac_zdq.sp "
+* "runtitle" "*ac analysis for inv"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc= 1.000e-12       
+.nodeset
++ vdd =   1.8000        
++ vi1 = 2.078e-06       
++ vo1 =   1.8000        
++ vo2 = 3.578e-09       
+***   END: Saved Operating Point ***                     

@@ -1,0 +1,12 @@
+Fitter Status : Successful - Sat Dec 21 22:51:39 2019
+Quartus II Version : 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+Revision Name : hmr_cpu
+Top-level Entity Name : hmr_cpu
+Family : Cyclone
+Device : EP1C3T100C8
+Timing Models : Final
+Total logic elements : 243 / 2,910 ( 8 % )
+Total pins : 60 / 65 ( 92 % )
+Total virtual pins : 0
+Total memory bits : 2,048 / 59,904 ( 3 % )
+Total PLLs : 0 / 1 ( 0 % )

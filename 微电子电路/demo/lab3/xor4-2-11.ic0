@@ -1,0 +1,20 @@
+* "simulator" "HSPICE" 
+* "version" "G-2012.06-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "17:35:37 12/20/2018 "
+* "netlist" "xor4-2-11.sp "
+* "runtitle" "*nand gate hspice file"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc= 1.000e-12       
+.nodeset
++ 1 =   1.8000        
++ a =   0.            
++ af =   0.            
++ b =   0.            
++ bf =   0.            
++ tvo =   0.1565        
++ vo =   0.6289        
+***   END: Saved Operating Point ***                     

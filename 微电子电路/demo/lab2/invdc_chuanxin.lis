@@ -1,0 +1,3422 @@
+ ****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+  Copyright (C) 2012 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: invdc_chuanxin.sp                                                 
+  Command line options: -i invdc_chuanxin.sp -o invdc_chuanxin.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   hmr                  HOSTNAME: BF-201911211153 
+  lic: HOSTID: "0c9d922ee649 00ffaabbccdd 005056c00001 005056c00008 70c94e31fa78
+  12c94e31fa78 22c94e3
+  lic: Using FLEXlm license file: 
+  lic: D:\synopsys\Hspice_G-2012.06-SP1\license.dat 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 31-dec-2019/2019.12 
+  lic: NODE LOCKED license on hostid "0c9d922ee649 00ffaabbccdd 005056c00001 005
+ 056c00008 70c94e31fa7
+  lic:   
+ Init: read install configuration file: d:\synopsys\Hspice_G-2012.06-SP1\meta.cfg
+  **info** (invdc_chuanxin.sp:9) DC voltage reset to initial transient source value              in source        0:vin                 new dc=  0.0000D+00
+ ***************************************************************************
+ ***        model parameters  model name:   0:pch.8    model type:pmos   ***
+ ***************************************************************************
+
+   *** general parameters ***
+    deriv=   0.           
+
+   ***  level 49  model parameters  ***
+
+       hspver=     2000.2               level=         49         
+      version=        3.2            paramchk=          1         
+       apwarn=          1                lite=          0         
+       vgslim=          0             binUnit=          2         
+       capMod=          3               xpart=          0         
+       mobMod=          1              nqsMod=          0         
+       stiMod=          0                 elm=          5         
+     sfvtflag=          0                 tox=  4.08e-009 meter   
+           xj=   1.5e-007 meter       binflag=          0         
+         lmin=   1.2e-006 meter          lmax=2.0001e-005 meter   
+         wmin=   1.2e-006 meter          wmax= 0.00010001 meter   
+         lref=   1.2e-006 meter          wref=   1.2e-006 meter   
+         lint=     2e-008 meter          wint=     2e-008 meter   
+        lmult=          1               wmult=          1         
+           ll=          0                 lln=         -1         
+           lw=          0                 lwn=          1         
+          lwl=          0                  wl=          0         
+          wln=          1                  ww=          0         
+          wwn=          1                 wwl=          0         
+          dwg=          0 m/V             dwb=          0 m/V^1/2 
+           xl=  -1.3e-008                  xw=          0         
+           a0=   0.986349                 ags=  0.0937354 V^-1    
+           b0=          0 meter            b1=          0 meter   
+         keta=  0.0111359 V^-1           voff= -0.0990958 V       
+        ngate=     5e+020 cm^-3           vbx=          0 V       
+          vbm=         -3 V                xt=  1.55e-007 meter   
+         vth0=  -0.419035 V               nch=  4.01e+017 cm^-3   
+         nsub=     6e+016 cm^-3           nlx=          0 meter   
+       gamma1=          0 V^-1/2       gamma2=          0 V^-1/2  
+           k1=    0.67238 V^1/2            k2=      -0.01         
+           k3=          0                 k3b=          0 V^-1    
+           w0=          0 meter          dvt0=          0         
+         dvt1=          0                dvt2=          0 V^-1    
+        dvt0w=          0 meter^-1      dvt1w=          0 meter^-1
+        dvt2w=          0 V^-1           dsub=          0         
+         eta0=     0.0002                etab=-1.32623e-005 V^-1    
+           u0= 0.00924807 m^2/V/sec         ua=-8.53132e-011 m/V     
+           ub=1.46747e-018 (m/V)^2          uc=-3.4418e-011 V^-1    
+         vsat=      60000 m/sec            a1=          0 v^-1    
+           a2=        0.4               delta=       0.01 V       
+         rdsw=        500 ohm-um         prwg=          0 V^-1    
+         prwb=          0 V^-1/2           wr=          1         
+         pclm=   0.574609             pdiblc1=-2.26391e-005         
+      pdiblc2=     1e-005             pdiblcb=          0 V^-1    
+       pscbe1=     2e+008 V/m          pscbe2=3.90406e-007 V/m     
+        drout=          0                pvag=          0         
+      nfactor=          1                cdsc=          0 f/m^2   
+        cdscb=          0 f/V/m^2       cdscd=          0 f/V/m^2 
+          cit=0.000613034 f/m^2        alpha0=          0 m/V     
+        beta0=    22.0359 V               dlc=     6e-009 meter   
+          dwc=     5e-009 meter           clc=     1e-007 meter   
+          cle=        0.6                cgso=   3.3e-010 f/m     
+         cgdo=   3.3e-010 f/m            cgbo=     1e-013 f/m     
+         cgsl=          0 f/m            cgdl=          0 f/m     
+       ckappa=        0.6                  cf=          0 f/m     
+         acde=       0.84 m/V            moin=         15 V^1/2   
+         toxm=  4.08e-009 m            dtoxcv=          0 m       
+          vfb=         -1 V            alpha1=     4.9061 1/V     
+         ijth=        0.1 A              noff=          1         
+       voffcv=          0                 tcj=      0.001 1/K     
+        tcjsw=     0.0005 1/K          tcjswg=     0.0005 1/K     
+          tpb=      0.002 V/K           tpbsw=      0.002 V/K     
+       tpbswg=      0.002 V/K             llc=     -0.048         
+          lwc=          0                lwlc=          0         
+          wlc=          0                 wwc=          0         
+         wwlc=          0                tnom=     298.15 K       
+          kt1=  -0.275117 V              kt1l=          0         
+          kt2= -0.0216674                 ute=    -0.7971         
+          ua1=1.66355e-009 m/V             ub1=-1.7223e-018 (m/V)^2 
+          uc1=-8.92392e-011 m/V^2            at=      10000 m/s     
+          prt=          0         
+          using Berkeley noise model       noiMod=          2         
+         noia=  7.29e+018                noib=      83200         
+         noic=   1.7e-012                  em=   4.2e+007         
+           ef=       1.05                  af=          1         
+           kf=          0              gdsnoi=-1.23457e-029         
+          using Berkeley diodes          using ACM 
+          acm=        12                 hdif= 1.77e-007 meter    
+         ldif= 1.24e-007 meter             js= 2.74e-007 amp/m^2  
+          jsw=  5.6e-013 amp/m            xti=         3          
+           nj=         1                   cj=   0.00107 f/m^2    
+           mj=     0.418                   pb=    0.7881 V        
+         cjsw= 2.36e-010 f/m             mjsw=     0.268          
+          php (not used)                  pbsw=     0.738 V        
+       cjgate (not used)                 cjswg= 4.11e-010 f/m      
+        mjswg=     0.268                pbswg=       0.6 V        
+          la0=1.25307e-008                lags=1.25857e-007         
+        lketa=1.33876e-008               lvoff=-1.2919e-008         
+        lvth0=-3.48859e-008                 lk1=-1.98848e-008         
+        letab=3.74188e-012                 lu0=-5.38961e-010         
+          lua=-9.96195e-017                 lub=2.32881e-025         
+          luc=-1.23268e-018               lpclm=4.96041e-007         
+     lpdiblc1=1.45455e-009             lpscbe2=-4.01915e-013         
+         lcit=-1.2965e-010              lbeta0=-2.33193e-007         
+         lkt1=3.8123e-009                lkt2=-4.43291e-009         
+         lute=5.37724e-008                lua1=-3.25805e-016         
+         lub1=2.60414e-025                luc1=3.54504e-017         
+      lalpha1=-9.82989e-007                 wa0=2.8014e-008         
+         wags=1.52353e-008               wketa=3.10449e-008         
+        wvoff=-2.04286e-009               wvth0=1.54808e-008         
+          wk1=-2.67861e-008               wetab=3.78429e-012         
+          wu0=-9.6071e-010                 wua=8.4589e-017         
+          wub=-5.31938e-025                 wuc=-8.43221e-017         
+        wpclm=-2.34584e-008            wpdiblc1=-1.21556e-011         
+       wbeta0=-3.13891e-007                wkt1=1.19926e-008         
+         wkt2=-6.91042e-010                wute=-6.85133e-008         
+         wua1=-6.27483e-016                wub1=2.71236e-025         
+         wuc1=6.1447e-017             walpha1=-9.45161e-007         
+          pa0=-3.18309e-014                pags=-8.10241e-014         
+        pketa=-3.45544e-014               pvoff=9.87269e-015         
+        pvth0=-1.19153e-015                 pk1=4.05121e-014         
+        petab=-4.34058e-018                 pu0=-4.25547e-017         
+          pua=-1.6307e-023                 pub=2.50222e-031         
+          puc=5.23082e-023               ppclm=3.74481e-014         
+     ppdiblc1=4.25547e-017              pbeta0=9.0216e-013         
+         pkt1=-6.97897e-015                pkt2=3.21714e-015         
+         pute=4.68102e-014                pua1=4.17036e-022         
+         pub1=-3.08096e-031                puc1=-2.41881e-023         
+      palpha1=2.63669e-012         
+ ***************************************************************************
+ ***        model parameters  model name:   0:nch.8    model type:nmos   ***
+ ***************************************************************************
+
+   *** general parameters ***
+    deriv=   0.           
+
+   ***  level 49  model parameters  ***
+
+       hspver=     2000.2               level=         49         
+      version=        3.2            paramchk=          1         
+       apwarn=          1                lite=          0         
+       vgslim=          0             binUnit=          2         
+       capMod=          3               xpart=          0         
+       mobMod=          1              nqsMod=          0         
+       stiMod=          0                 elm=          5         
+     sfvtflag=          0                 tox=  4.08e-009 meter   
+           xj=   1.5e-007 meter       binflag=          0         
+         lmin=   1.2e-006 meter          lmax=2.0001e-005 meter   
+         wmin=   1.2e-006 meter          wmax= 0.00010001 meter   
+         lref=   1.2e-006 meter          wref=   1.2e-006 meter   
+         lint=   1.3e-008 meter          wint=     2e-008 meter   
+        lmult=          1               wmult=          1         
+           ll=          0                 lln=         -1         
+           lw=          0                 lwn=          1         
+          lwl=          0                  wl=          0         
+          wln=          1                  ww=          0         
+          wwn=          1                 wwl=          0         
+          dwg=          0 m/V             dwb=          0 m/V^1/2 
+           xl=  -1.3e-008                  xw=          0         
+           a0=    0.57391                 ags=       0.22 V^-1    
+           b0=          0 meter            b1=          0 meter   
+         keta=  0.0047187 V^-1           voff=  -0.105143 V       
+        ngate=     5e+020 cm^-3           vbx=          0 V       
+          vbm=         -3 V                xt=  1.55e-007 meter   
+         vth0=   0.404319 V               nch=  4.01e+017 cm^-3   
+         nsub=     6e+016 cm^-3           nlx=          0 meter   
+       gamma1=          0 V^-1/2       gamma2=          0 V^-1/2  
+           k1=   0.584804 V^1/2            k2=      -0.01         
+           k3=          0                 k3b=          0 V^-1    
+           w0=          0 meter          dvt0=          0         
+         dvt1=          0                dvt2=          0 V^-1    
+        dvt0w=          0 meter^-1      dvt1w=          0 meter^-1
+        dvt2w=          0 V^-1           dsub=          0         
+         eta0=     0.0001                etab=8.16163e-008 V^-1    
+           u0=  0.0352123 m^2/V/sec         ua=-1.06951e-009 m/V     
+           ub=2.50656e-018 (m/V)^2          uc=1.04811e-010 V^-1    
+         vsat=    80459.1 m/sec            a1=          0 v^-1    
+           a2=       0.99               delta=       0.01 V       
+         rdsw=      164.4 ohm-um         prwg=          0 V^-1    
+         prwb=          0 V^-1/2           wr=          1         
+         pclm=    0.47368             pdiblc1=0.000200258         
+      pdiblc2=     1e-005             pdiblcb=          0 V^-1    
+       pscbe1=     2e+008 V/m          pscbe2=3.94857e-007 V/m     
+        drout=          0                pvag=          0         
+      nfactor=          1                cdsc=          0 f/m^2   
+        cdscb=          0 f/V/m^2       cdscd=          0 f/V/m^2 
+          cit=     0.0008 f/m^2        alpha0=          0 m/V     
+        beta0=    11.8162 V               dlc=     6e-009 meter   
+          dwc=     3e-009 meter           clc=     1e-007 meter   
+          cle=        0.6                cgso=  3.52e-010 f/m     
+         cgdo=  3.52e-010 f/m            cgbo=     1e-013 f/m     
+         cgsl=          0 f/m            cgdl=          0 f/m     
+       ckappa=        0.6                  cf=          0 f/m     
+         acde=        0.7 m/V            moin=         15 V^1/2   
+         toxm=  4.08e-009 m            dtoxcv=          0 m       
+          vfb=         -1 V            alpha1=   0.514232 1/V     
+         ijth=        0.1 A              noff=          1         
+       voffcv=          0                 tcj=    0.00105 1/K     
+        tcjsw=   0.000463 1/K          tcjswg=   0.000463 1/K     
+          tpb=    0.00164 V/K           tpbsw=   0.000526 V/K     
+       tpbswg=   0.000526 V/K             llc=     -0.048         
+          lwc=          0                lwlc=          0         
+          wlc=          0                 wwc=          0         
+         wwlc=          0                tnom=     298.15 K       
+          kt1=  -0.247003 V              kt1l=          0         
+          kt2= -0.0277815                 ute=   -1.61824         
+          ua1=1.07295e-009 m/V             ub1=-9.93955e-019 (m/V)^2 
+          uc1=-3.51884e-011 m/V^2            at=      19122 m/s     
+          prt=          0         
+          using Berkeley noise model       noiMod=          2         
+         noia=  1.73e+020                noib=        871         
+         noic=   2.1e-013                  em=   4.2e+007         
+           ef=       0.86                  af=          1         
+           kf=          0              gdsnoi=-1.23457e-029         
+          using Berkeley diodes          using ACM 
+          acm=        12                 hdif= 1.77e-007 meter    
+         ldif= 1.24e-007 meter             js= 3.23e-007 amp/m^2  
+          jsw=  6.7e-013 amp/m            xti=         3          
+           nj=         1                   cj=   0.00101 f/m^2    
+           mj=     0.349                   pb=    0.6302 V        
+         cjsw= 1.94e-010 f/m             mjsw=     0.162          
+          php (not used)                  pbsw=       0.6 V        
+       cjgate (not used)                 cjswg= 3.51e-010 f/m      
+        mjswg=      0.41                pbswg=       0.6 V        
+          la0=-4.63626e-007                lags=8.99662e-007         
+        lketa=-5.02241e-008               lvoff=-1.4205e-008         
+        lvth0=7.26827e-008                 lk1=-1.33831e-008         
+        letab=-6.70061e-011                 lu0=1.04079e-008         
+          lua=1.53839e-016                 lub=3.88284e-025         
+          luc=3.45414e-017               lvsat=-0.00457332         
+        lpclm=6.75704e-007            lpdiblc1=8.57903e-010         
+      lpscbe2=-4.46819e-013              lbeta0=-3.70955e-008         
+         lkt1=5.72263e-009                lkt2=1.94659e-009         
+         lute=-3.82962e-008                lua1=-1.06913e-016         
+         lub1=2.4817e-025                luc1=-1.68456e-017         
+          lat= 0.00874594             lalpha1=-1.5435e-008         
+          wa0=-3.31678e-007                wags=-2.12504e-007         
+        wketa=-1.05989e-008               wvoff=-1.60318e-008         
+        wvth0=1.68168e-008                 wk1=1.27571e-008         
+        wetab=-3.94414e-011                 wu0=2.35089e-009         
+          wua=5.50925e-016                 wub=-6.62442e-025         
+          wuc=-1.31754e-017               wvsat=-0.00457286         
+        wpclm=3.46467e-007            wpdiblc1=-8.24487e-011         
+       wbeta0=-7.72332e-007                wkt1=-3.21066e-010         
+         wkt2=1.97125e-009                wute=3.39448e-008         
+         wua1=1.2439e-016                wub1=-5.17512e-025         
+         wuc1=-1.04853e-016                 wat=  0.0010185         
+      walpha1=-1.88734e-007                 pa0=5.88875e-013         
+         pags=-8.91164e-013               pketa=3.84469e-014         
+        pvoff=2.76062e-014               pvth0=-3.01943e-014         
+          pk1=-4.14093e-015               petab=6.00436e-017         
+          pu0=-1.32165e-014                 pua=-9.17045e-022         
+          pub=2.95042e-031                 puc=-1.5494e-023         
+        pvsat=4.55503e-008               ppclm=-3.87005e-013         
+     ppdiblc1=1.08527e-016              pbeta0=5.00363e-013         
+         pkt1=-1.38031e-014                pkt2=-3.15746e-015         
+         pute=6.72902e-014                pua1=2.95042e-023         
+         pub1=1.9842e-031                puc1=7.01371e-023         
+          pat=-1.01453e-008             palpha1=1.15774e-013         
+ 
+
+  
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+
+   *** parameter width =    4.000E-06 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.7316    at= 2.4230e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.81575     at= 5.8064e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 3.4552e-10  targ= 6.1161e-10   trig= 2.6609e-10
+ tplh= 4.4027e-09  targ= 1.0137e-08   trig= 5.7339e-09
+ tp= 2.3741e-09
+
+          ***** job concluded
+
+   *** parameter width =    4.500E-06 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.7252    at= 2.4472e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.81621     at= 5.9140e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 3.5866e-10  targ= 6.2381e-10   trig= 2.6515e-10
+ tplh= 4.4005e-09  targ= 1.0135e-08   trig= 5.7348e-09
+ tp= 2.3796e-09
+
+          ***** job concluded
+
+   *** parameter width =    5.000E-06 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.7194    at= 2.4690e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.81481     at= 1.5882e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 3.7609e-10  targ= 6.4062e-10   trig= 2.6453e-10
+ tplh= 4.3945e-09  targ= 1.0130e-08   trig= 5.7355e-09
+ tp= 2.3853e-09
+
+          ***** job concluded
+
+   *** parameter width =    5.500E-06 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.7231    at= 1.0271e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.82049     at= 1.5805e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 3.9164e-10  targ= 6.5591e-10   trig= 2.6426e-10
+ tplh= 4.3671e-09  targ= 1.0103e-08   trig= 5.7357e-09
+ tp= 2.3794e-09
+
+          ***** job concluded
+
+   *** parameter width =    6.000E-06 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.7090    at= 2.5080e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.88104     at= 5.8569e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 4.1373e-10  targ= 6.6762e-10   trig= 2.5389e-10
+ tplh= 4.3369e-09  targ= 1.0083e-08   trig= 5.7461e-09
+ tp= 2.3753e-09
+
+          ***** job concluded
+
+   *** parameter width =    6.500E-06 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.7044    at= 2.5261e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.81743     at= 5.8979e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 4.0729e-10  targ= 6.6938e-10   trig= 2.6209e-10
+ tplh= 4.3282e-09  targ= 1.0066e-08   trig= 5.7379e-09
+ tp= 2.3677e-09
+
+          ***** job concluded
+
+   *** parameter width =    7.000E-06 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.7002    at= 2.5435e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84016     at= 1.5816e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 4.1540e-10  targ= 6.7375e-10   trig= 2.5835e-10
+ tplh= 4.2992e-09  targ= 1.0041e-08   trig= 5.7417e-09
+ tp= 2.3573e-09
+
+          ***** job concluded
+
+   *** parameter width =    7.500E-06 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6964    at= 2.5606e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85080     at= 1.5822e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 4.1762e-10  targ= 6.7395e-10   trig= 2.5633e-10
+ tplh= 4.2786e-09  targ= 1.0022e-08   trig= 5.7437e-09
+ tp= 2.3481e-09
+
+          ***** job concluded
+
+   *** parameter width =    8.000E-06 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6928    at= 2.5773e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.88731     at= 5.8474e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 4.2525e-10  targ= 6.7602e-10   trig= 2.5077e-10
+ tplh= 4.2522e-09  targ= 1.0001e-08   trig= 5.7492e-09
+ tp= 2.3387e-09
+
+          ***** job concluded
+
+   *** parameter width =    8.500E-06 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6895    at= 2.5937e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.90320     at= 5.8559e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 4.3802e-10  targ= 6.8613e-10   trig= 2.4811e-10
+ tplh= 4.1000e-09  targ= 9.8519e-09   trig= 5.7519e-09
+ tp= 2.2690e-09
+
+          ***** job concluded
+
+   *** parameter width =    9.000E-06 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6865    at= 2.6100e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.89102     at= 1.5848e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 4.4037e-10  targ= 6.8975e-10   trig= 2.4938e-10
+ tplh= 3.9504e-09  targ= 9.7010e-09   trig= 5.7506e-09
+ tp= 2.1954e-09
+
+          ***** job concluded
+
+   *** parameter width =    9.500E-06 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6837    at= 2.6262e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.91242     at= 5.8604e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 4.4919e-10  targ= 6.9521e-10   trig= 2.4601e-10
+ tplh= 3.8163e-09  targ= 9.5702e-09   trig= 5.7540e-09
+ tp= 2.1327e-09
+
+          ***** job concluded
+
+   *** parameter width =    1.000E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6529    at= 2.1726e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.82628     at= 5.8013e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 4.4801e-10  targ= 7.0171e-10   trig= 2.5370e-10
+ tplh= 3.7233e-09  targ= 9.4696e-09   trig= 5.7463e-09
+ tp= 2.0857e-09
+
+          ***** job concluded
+
+   *** parameter width =    1.050E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6520    at= 2.1884e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.91694     at= 5.8646e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 4.8289e-10  targ= 7.2388e-10   trig= 2.4099e-10
+ tplh= 3.5803e-09  targ= 9.3393e-09   trig= 5.7590e-09
+ tp= 2.0316e-09
+
+          ***** job concluded
+
+   *** parameter width =    1.100E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6512    at= 2.2034e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84723     at= 5.8087e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 4.8664e-10  targ= 7.3721e-10   trig= 2.5056e-10
+ tplh= 3.4927e-09  targ= 9.2422e-09   trig= 5.7494e-09
+ tp= 1.9897e-09
+
+          ***** job concluded
+
+   *** parameter width =    1.150E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6505    at= 2.2178e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.92158     at= 1.5863e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 5.0743e-10  targ= 7.4756e-10   trig= 2.4013e-10
+ tplh= 3.3372e-09  targ= 9.0971e-09   trig= 5.7599e-09
+ tp= 1.9223e-09
+
+          ***** job concluded
+
+   *** parameter width =    1.200E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6498    at= 2.2317e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84731     at= 5.8052e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 4.9314e-10  targ= 7.4348e-10   trig= 2.5035e-10
+ tplh= 3.3224e-09  targ= 9.0721e-09   trig= 5.7497e-09
+ tp= 1.9078e-09
+
+          ***** job concluded
+
+   *** parameter width =    1.250E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6542    at= 1.0263e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.88445     at= 5.8316e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 4.9791e-10  targ= 7.4372e-10   trig= 2.4581e-10
+ tplh= 3.2036e-09  targ= 8.9578e-09   trig= 5.7542e-09
+ tp= 1.8507e-09
+
+          ***** job concluded
+
+   *** parameter width =    1.300E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6584    at= 1.0262e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.92522     at= 1.5866e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 4.8823e-10  targ= 7.2895e-10   trig= 2.4072e-10
+ tplh= 3.1098e-09  targ= 8.8691e-09   trig= 5.7593e-09
+ tp= 1.7990e-09
+
+          ***** job concluded
+
+   *** parameter width =    1.350E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6477    at= 2.2707e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.81688     at= 5.8384e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 4.7222e-10  targ= 7.2651e-10   trig= 2.5429e-10
+ tplh= 3.1015e-09  targ= 8.8472e-09   trig= 5.7457e-09
+ tp= 1.7868e-09
+
+          ***** job concluded
+
+   *** parameter width =    1.400E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6471    at= 2.2829e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.92884     at= 1.5865e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 5.0302e-10  targ= 7.4167e-10   trig= 2.3866e-10
+ tplh= 2.9499e-09  targ= 8.7113e-09   trig= 5.7613e-09
+ tp= 1.7265e-09
+
+          ***** job concluded
+
+   *** parameter width =    1.450E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6465    at= 2.2948e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.81964     at= 1.5844e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 4.8737e-10  targ= 7.4111e-10   trig= 2.5374e-10
+ tplh= 2.9633e-09  targ= 8.7096e-09   trig= 5.7463e-09
+ tp= 1.7253e-09
+
+          ***** job concluded
+
+   *** parameter width =    1.500E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6545    at= 1.0268e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.82177     at= 1.5776e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 4.9077e-10  targ= 7.4531e-10   trig= 2.5455e-10
+ tplh= 2.9072e-09  targ= 8.6526e-09   trig= 5.7455e-09
+ tp= 1.6990e-09
+
+          ***** job concluded
+
+   *** parameter width =    1.550E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6552    at= 1.0262e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85536     at= 5.8028e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 5.0612e-10  targ= 7.5611e-10   trig= 2.4998e-10
+ tplh= 2.8246e-09  targ= 8.5747e-09   trig= 5.7500e-09
+ tp= 1.6654e-09
+
+          ***** job concluded
+
+   *** parameter width =    1.600E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6623    at= 1.0267e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.82909     at= 1.5772e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 5.0224e-10  targ= 7.5685e-10   trig= 2.5462e-10
+ tplh= 2.8070e-09  targ= 8.5524e-09   trig= 5.7454e-09
+ tp= 1.6546e-09
+
+          ***** job concluded
+
+   *** parameter width =    1.650E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6629    at= 1.0270e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86141     at= 1.5806e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 5.1766e-10  targ= 7.6787e-10   trig= 2.5021e-10
+ tplh= 2.7329e-09  targ= 8.4827e-09   trig= 5.7498e-09
+ tp= 1.6253e-09
+
+          ***** job concluded
+
+   *** parameter width =    1.700E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6438    at= 2.3504e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.87740     at= 1.5819e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 5.5064e-10  targ= 7.9599e-10   trig= 2.4534e-10
+ tplh= 2.6657e-09  targ= 8.4204e-09   trig= 5.7547e-09
+ tp= 1.6082e-09
+
+          ***** job concluded
+
+   *** parameter width =    1.750E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6582    at= 1.0267e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.82059     at= 1.5824e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 5.2506e-10  targ= 7.8029e-10   trig= 2.5523e-10
+ tplh= 2.6517e-09  targ= 8.3965e-09   trig= 5.7448e-09
+ tp= 1.5884e-09
+
+          ***** job concluded
+
+   *** parameter width =    1.800E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6872    at= 1.0285e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86869     at= 5.8103e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 5.3122e-10  targ= 7.8380e-10   trig= 2.5258e-10
+ tplh= 2.5876e-09  targ= 8.3350e-09   trig= 5.7474e-09
+ tp= 1.5594e-09
+
+          ***** job concluded
+
+   *** parameter width =    1.850E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6504    at= 1.0264e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.82467     at= 5.7722e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 5.5125e-10  targ= 8.0482e-10   trig= 2.5358e-10
+ tplh= 2.5637e-09  targ= 8.3101e-09   trig= 5.7464e-09
+ tp= 1.5575e-09
+
+          ***** job concluded
+
+   *** parameter width =    1.900E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6419    at= 2.3916e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.87829     at= 1.5818e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 5.6697e-10  targ= 8.1193e-10   trig= 2.4495e-10
+ tplh= 2.4792e-09  targ= 8.2342e-09   trig= 5.7550e-09
+ tp= 1.5231e-09
+
+          ***** job concluded
+
+   *** parameter width =    1.950E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6414    at= 2.4017e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.82080     at= 5.8122e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 5.5760e-10  targ= 8.1047e-10   trig= 2.5287e-10
+ tplh= 2.4713e-09  targ= 8.2184e-09   trig= 5.7471e-09
+ tp= 1.5145e-09
+
+          ***** job concluded
+
+   *** parameter width =    2.000E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6701    at= 1.0290e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.82262     at= 1.5819e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 5.5523e-10  targ= 8.1183e-10   trig= 2.5661e-10
+ tplh= 2.4523e-09  targ= 8.1957e-09   trig= 5.7434e-09
+ tp= 1.5038e-09
+
+          ***** job concluded
+
+   *** parameter width =    2.050E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6549    at= 1.0271e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.82366     at= 5.8229e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 5.6194e-10  targ= 8.1628e-10   trig= 2.5435e-10
+ tplh= 2.4072e-09  targ= 8.1529e-09   trig= 5.7457e-09
+ tp= 1.4846e-09
+
+          ***** job concluded
+
+   *** parameter width =    2.100E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6400    at= 2.4315e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83635     at= 5.7756e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 5.7348e-10  targ= 8.2399e-10   trig= 2.5051e-10
+ tplh= 2.3588e-09  targ= 8.1083e-09   trig= 5.7495e-09
+ tp= 1.4662e-09
+
+          ***** job concluded
+
+   *** parameter width =    2.150E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6516    at= 1.0268e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.87843     at= 1.5815e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 5.7625e-10  targ= 8.2253e-10   trig= 2.4628e-10
+ tplh= 2.2871e-09  targ= 8.0408e-09   trig= 5.7537e-09
+ tp= 1.4317e-09
+
+          ***** job concluded
+
+   *** parameter width =    2.200E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6534    at= 1.0272e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86855     at= 5.8051e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 5.7928e-10  targ= 8.2717e-10   trig= 2.4790e-10
+ tplh= 2.2611e-09  targ= 8.0132e-09   trig= 5.7521e-09
+ tp= 1.4202e-09
+
+          ***** job concluded
+
+   *** parameter width =    2.250E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6386    at= 2.4612e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85708     at= 5.7928e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 5.8568e-10  targ= 8.3312e-10   trig= 2.4744e-10
+ tplh= 2.2325e-09  targ= 7.9851e-09   trig= 5.7526e-09
+ tp= 1.4091e-09
+
+          ***** job concluded
+
+   *** parameter width =    2.300E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6381    at= 2.4712e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83930     at= 5.7743e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 5.8844e-10  targ= 8.3828e-10   trig= 2.4984e-10
+ tplh= 2.2279e-09  targ= 7.9780e-09   trig= 5.7502e-09
+ tp= 1.4081e-09
+
+          ***** job concluded
+
+   *** parameter width =    2.350E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6377    at= 2.4813e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85606     at= 1.5790e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 6.0782e-10  targ= 8.5527e-10   trig= 2.4745e-10
+ tplh= 2.2026e-09  targ= 7.9552e-09   trig= 5.7526e-09
+ tp= 1.4052e-09
+
+          ***** job concluded
+
+   *** parameter width =    2.400E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6372    at= 2.4914e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.82578     at= 1.5817e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 6.2070e-10  targ= 8.7228e-10   trig= 2.5159e-10
+ tplh= 2.1882e-09  targ= 7.9366e-09   trig= 5.7484e-09
+ tp= 1.4044e-09
+
+          ***** job concluded
+
+   *** parameter width =    2.450E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6367    at= 2.5018e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86861     at= 1.5802e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 6.3726e-10  targ= 8.8284e-10   trig= 2.4557e-10
+ tplh= 2.1319e-09  targ= 7.8863e-09   trig= 5.7544e-09
+ tp= 1.3846e-09
+
+          ***** job concluded
+
+   *** parameter width =    2.500E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6362    at= 2.5122e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.82064     at= 1.5775e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 6.2995e-10  targ= 8.8211e-10   trig= 2.5216e-10
+ tplh= 2.1376e-09  targ= 7.8855e-09   trig= 5.7478e-09
+ tp= 1.3838e-09
+
+          ***** job concluded
+
+   *** parameter width =    2.550E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6357    at= 2.5229e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84723     at= 1.5778e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 6.2223e-10  targ= 8.7063e-10   trig= 2.4840e-10
+ tplh= 2.0873e-09  targ= 7.8389e-09   trig= 5.7516e-09
+ tp= 1.3548e-09
+
+          ***** job concluded
+
+   *** parameter width =    2.600E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6352    at= 2.5338e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.82576     at= 5.8028e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 6.2416e-10  targ= 8.7547e-10   trig= 2.5131e-10
+ tplh= 2.0767e-09  targ= 7.8254e-09   trig= 5.7487e-09
+ tp= 1.3504e-09
+
+          ***** job concluded
+
+   *** parameter width =    2.650E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6360    at= 1.0302e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84257     at= 5.7714e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 6.3390e-10  targ= 8.8299e-10   trig= 2.4909e-10
+ tplh= 2.0607e-09  targ= 7.8116e-09   trig= 5.7509e-09
+ tp= 1.3473e-09
+
+          ***** job concluded
+
+   *** parameter width =    2.700E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6341    at= 2.5565e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.81937     at= 6.0000e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 6.4591e-10  targ= 8.9796e-10   trig= 2.5205e-10
+ tplh= 2.0418e-09  targ= 7.7897e-09   trig= 5.7480e-09
+ tp= 1.3438e-09
+
+          ***** job concluded
+
+   *** parameter width =    2.750E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6335    at= 2.5683e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83796     at= 1.5758e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 6.7140e-10  targ= 9.2079e-10   trig= 2.4939e-10
+ tplh= 1.9889e-09  targ= 7.7395e-09   trig= 5.7506e-09
+ tp= 1.3301e-09
+
+          ***** job concluded
+
+   *** parameter width =    2.800E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6329    at= 2.5805e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83751     at= 5.7682e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 6.8178e-10  targ= 9.3115e-10   trig= 2.4937e-10
+ tplh= 1.9936e-09  targ= 7.7443e-09   trig= 5.7506e-09
+ tp= 1.3377e-09
+
+          ***** job concluded
+
+   *** parameter width =    2.850E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6393    at= 1.0269e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85960     at= 5.7876e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 6.9296e-10  targ= 9.4014e-10   trig= 2.4718e-10
+ tplh= 1.9675e-09  targ= 7.7203e-09   trig= 5.7528e-09
+ tp= 1.3302e-09
+
+          ***** job concluded
+
+   *** parameter width =    2.900E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6464    at= 1.0276e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86848     at= 1.5797e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 6.8808e-10  targ= 9.3502e-10   trig= 2.4694e-10
+ tplh= 1.9155e-09  targ= 7.6686e-09   trig= 5.7531e-09
+ tp= 1.3018e-09
+
+          ***** job concluded
+
+   *** parameter width =    2.950E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6431    at= 1.0272e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86025     at= 5.8024e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 6.9284e-10  targ= 9.4046e-10   trig= 2.4762e-10
+ tplh= 1.8992e-09  targ= 7.6516e-09   trig= 5.7524e-09
+ tp= 1.2960e-09
+
+          ***** job concluded
+
+   *** parameter width =    3.000E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6305    at= 2.6346e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.82744     at= 5.7876e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 6.9563e-10  targ= 9.4605e-10   trig= 2.5042e-10
+ tplh= 1.8923e-09  targ= 7.6419e-09   trig= 5.7496e-09
+ tp= 1.2940e-09
+
+          ***** job concluded
+
+   *** parameter width =    3.050E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6298    at= 2.6499e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85809     at= 5.7832e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 7.0880e-10  targ= 9.5488e-10   trig= 2.4607e-10
+ tplh= 1.8956e-09  targ= 7.6495e-09   trig= 5.7539e-09
+ tp= 1.3022e-09
+
+          ***** job concluded
+
+   *** parameter width =    3.100E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6309    at= 1.0288e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86327     at= 5.7890e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 7.0967e-10  targ= 9.5519e-10   trig= 2.4552e-10
+ tplh= 1.8770e-09  targ= 7.6315e-09   trig= 5.7545e-09
+ tp= 1.2933e-09
+
+          ***** job concluded
+
+   *** parameter width =    3.150E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6323    at= 1.0304e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.82438     at= 5.7743e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 6.8484e-10  targ= 9.3594e-10   trig= 2.5110e-10
+ tplh= 1.8570e-09  targ= 7.6059e-09   trig= 5.7489e-09
+ tp= 1.2709e-09
+
+          ***** job concluded
+
+   *** parameter width =    3.200E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6275    at= 2.7018e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85909     at= 1.5783e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 7.0980e-10  targ= 9.5542e-10   trig= 2.4562e-10
+ tplh= 1.8230e-09  targ= 7.5774e-09   trig= 5.7544e-09
+ tp= 1.2664e-09
+
+          ***** job concluded
+
+   *** parameter width =    3.250E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6315    at= 1.0291e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.82789     at= 1.5778e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 7.0342e-10  targ= 9.5393e-10   trig= 2.5050e-10
+ tplh= 1.8016e-09  targ= 7.5511e-09   trig= 5.7495e-09
+ tp= 1.2525e-09
+
+          ***** job concluded
+
+   *** parameter width =    3.300E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6259    at= 2.7399e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84289     at= 1.5762e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 7.0142e-10  targ= 9.4907e-10   trig= 2.4765e-10
+ tplh= 1.7809e-09  targ= 7.5333e-09   trig= 5.7524e-09
+ tp= 1.2412e-09
+
+          ***** job concluded
+
+   *** parameter width =    3.350E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6260    at= 2.1335e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84148     at= 1.5759e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 7.0218e-10  targ= 9.5003e-10   trig= 2.4786e-10
+ tplh= 1.7695e-09  targ= 7.5217e-09   trig= 5.7521e-09
+ tp= 1.2359e-09
+
+          ***** job concluded
+
+   *** parameter width =    3.400E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6277    at= 1.0297e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85284     at= 5.7721e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 7.2238e-10  targ= 9.6889e-10   trig= 2.4651e-10
+ tplh= 1.7741e-09  targ= 7.5276e-09   trig= 5.7535e-09
+ tp= 1.2482e-09
+
+          ***** job concluded
+
+   *** parameter width =    3.450E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6276    at= 2.1759e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85437     at= 1.5773e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 7.2874e-10  targ= 9.7503e-10   trig= 2.4629e-10
+ tplh= 1.7390e-09  targ= 7.4927e-09   trig= 5.7537e-09
+ tp= 1.2339e-09
+
+          ***** job concluded
+
+   *** parameter width =    3.500E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6297    at= 1.0295e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.82366     at= 5.9779e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 7.2403e-10  targ= 9.7488e-10   trig= 2.5085e-10
+ tplh= 1.7596e-09  targ= 7.5087e-09   trig= 5.7492e-09
+ tp= 1.2418e-09
+
+          ***** job concluded
+
+   *** parameter width =    3.550E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6461    at= 1.0272e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.82588     at= 5.7798e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 7.2613e-10  targ= 9.7895e-10   trig= 2.5282e-10
+ tplh= 1.7328e-09  targ= 7.4800e-09   trig= 5.7472e-09
+ tp= 1.2295e-09
+
+          ***** job concluded
+
+   *** parameter width =    3.600E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6301    at= 1.0293e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.82840     at= 1.5774e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 7.3723e-10  targ= 9.8748e-10   trig= 2.5025e-10
+ tplh= 1.7197e-09  targ= 7.4694e-09   trig= 5.7498e-09
+ tp= 1.2284e-09
+
+          ***** job concluded
+
+   *** parameter width =    3.650E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6310    at= 2.3015e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85695     at= 5.7744e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 7.4481e-10  targ= 9.9121e-10   trig= 2.4640e-10
+ tplh= 1.7075e-09  targ= 7.4611e-09   trig= 5.7536e-09
+ tp= 1.2261e-09
+
+          ***** job concluded
+
+   *** parameter width =    3.700E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6319    at= 2.3500e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86115     at= 5.7796e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 7.4384e-10  targ= 9.8978e-10   trig= 2.4594e-10
+ tplh= 1.6944e-09  targ= 7.4485e-09   trig= 5.7541e-09
+ tp= 1.2191e-09
+
+          ***** job concluded
+
+   *** parameter width =    3.750E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6328    at= 2.4129e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86125     at= 5.7792e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 7.7242e-10  targ= 1.0185e-09   trig= 2.4605e-10
+ tplh= 1.6825e-09  targ= 7.4365e-09   trig= 5.7539e-09
+ tp= 1.2275e-09
+
+          ***** job concluded
+
+   *** parameter width =    3.800E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6337    at= 2.4963e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86407     at= 5.7825e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 7.7286e-10  targ= 1.0186e-09   trig= 2.4579e-10
+ tplh= 1.6703e-09  targ= 7.4245e-09   trig= 5.7542e-09
+ tp= 1.2216e-09
+
+          ***** job concluded
+
+   *** parameter width =    3.850E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6336    at= 2.5039e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86094     at= 5.7776e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 7.7945e-10  targ= 1.0257e-09   trig= 2.4622e-10
+ tplh= 1.6609e-09  targ= 7.4147e-09   trig= 5.7538e-09
+ tp= 1.2202e-09
+
+          ***** job concluded
+
+   *** parameter width =    3.900E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6336    at= 2.5116e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.82410     at= 5.9752e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 7.7400e-10  targ= 1.0253e-09   trig= 2.5132e-10
+ tplh= 1.6645e-09  targ= 7.4132e-09   trig= 5.7487e-09
+ tp= 1.2193e-09
+
+          ***** job concluded
+
+   *** parameter width =    3.950E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6335    at= 2.5195e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84123     at= 5.7508e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 7.7942e-10  targ= 1.0284e-09   trig= 2.4893e-10
+ tplh= 1.6238e-09  targ= 7.3748e-09   trig= 5.7511e-09
+ tp= 1.2016e-09
+
+          ***** job concluded
+
+   *** parameter width =    4.000E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6334    at= 2.5276e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84416     at= 1.5761e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 7.7810e-10  targ= 1.0266e-09   trig= 2.4852e-10
+ tplh= 1.6105e-09  targ= 7.3620e-09   trig= 5.7515e-09
+ tp= 1.1943e-09
+
+          ***** job concluded
+
+   *** parameter width =    4.050E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6334    at= 2.5358e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84526     at= 1.5754e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 7.8225e-10  targ= 1.0306e-09   trig= 2.4836e-10
+ tplh= 1.6134e-09  targ= 7.3651e-09   trig= 5.7516e-09
+ tp= 1.1978e-09
+
+          ***** job concluded
+
+   *** parameter width =    4.100E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6416    at= 1.0281e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84477     at= 5.7527e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 8.1454e-10  targ= 1.0641e-09   trig= 2.4957e-10
+ tplh= 1.5939e-09  targ= 7.3443e-09   trig= 5.7504e-09
+ tp= 1.2042e-09
+
+          ***** job concluded
+
+   *** parameter width =    4.150E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6333    at= 2.5530e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83201     at= 1.5773e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 8.2765e-10  targ= 1.0778e-09   trig= 2.5018e-10
+ tplh= 1.5713e-09  targ= 7.3211e-09   trig= 5.7498e-09
+ tp= 1.1995e-09
+
+          ***** job concluded
+
+   *** parameter width =    4.200E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6332    at= 2.5618e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84253     at= 1.5749e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 8.2383e-10  targ= 1.0725e-09   trig= 2.4872e-10
+ tplh= 1.5563e-09  targ= 7.3076e-09   trig= 5.7513e-09
+ tp= 1.1901e-09
+
+          ***** job concluded
+
+   *** parameter width =    4.250E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6339    at= 1.0280e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85062     at= 5.7582e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 8.1077e-10  targ= 1.0585e-09   trig= 2.4769e-10
+ tplh= 1.5552e-09  targ= 7.3076e-09   trig= 5.7523e-09
+ tp= 1.1830e-09
+
+          ***** job concluded
+
+   *** parameter width =    4.300E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6331    at= 2.5803e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83316     at= 1.5776e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 8.1028e-10  targ= 1.0603e-09   trig= 2.5000e-10
+ tplh= 1.5709e-09  targ= 7.3209e-09   trig= 5.7500e-09
+ tp= 1.1906e-09
+
+          ***** job concluded
+
+   *** parameter width =    4.350E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6331    at= 2.5898e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83320     at= 5.7739e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 8.1021e-10  targ= 1.0602e-09   trig= 2.4999e-10
+ tplh= 1.5452e-09  targ= 7.2952e-09   trig= 5.7500e-09
+ tp= 1.1777e-09
+
+          ***** job concluded
+
+   *** parameter width =    4.400E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6331    at= 2.5997e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83388     at= 1.5780e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 8.0904e-10  targ= 1.0589e-09   trig= 2.4989e-10
+ tplh= 1.5409e-09  targ= 7.2910e-09   trig= 5.7501e-09
+ tp= 1.1749e-09
+
+          ***** job concluded
+
+   *** parameter width =    4.450E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6330    at= 2.6098e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83378     at= 1.5775e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 8.8051e-10  targ= 1.1304e-09   trig= 2.4990e-10
+ tplh= 1.5309e-09  targ= 7.2810e-09   trig= 5.7501e-09
+ tp= 1.2057e-09
+
+          ***** job concluded
+
+   *** parameter width =    4.500E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6330    at= 2.6201e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83421     at= 1.5778e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 8.8556e-10  targ= 1.1354e-09   trig= 2.4984e-10
+ tplh= 1.5061e-09  targ= 7.2563e-09   trig= 5.7502e-09
+ tp= 1.1958e-09
+
+          ***** job concluded
+
+   *** parameter width =    4.550E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6330    at= 2.6308e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83439     at= 1.5778e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 8.8955e-10  targ= 1.1394e-09   trig= 2.4981e-10
+ tplh= 1.5104e-09  targ= 7.2606e-09   trig= 5.7502e-09
+ tp= 1.2000e-09
+
+          ***** job concluded
+
+   *** parameter width =    4.600E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6330    at= 2.6418e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.87193     at= 1.5786e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 9.0057e-10  targ= 1.1452e-09   trig= 2.4460e-10
+ tplh= 1.4751e-09  targ= 7.2305e-09   trig= 5.7554e-09
+ tp= 1.1878e-09
+
+          ***** job concluded
+
+   *** parameter width =    4.650E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6330    at= 2.6531e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83295     at= 5.7554e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 8.9499e-10  targ= 1.1450e-09   trig= 2.5001e-10
+ tplh= 1.4838e-09  targ= 7.2338e-09   trig= 5.7500e-09
+ tp= 1.1894e-09
+
+          ***** job concluded
+
+   *** parameter width =    4.700E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6329    at= 2.6647e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83314     at= 1.5761e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 8.9703e-10  targ= 1.1470e-09   trig= 2.4998e-10
+ tplh= 1.4760e-09  targ= 7.2260e-09   trig= 5.7500e-09
+ tp= 1.1865e-09
+
+          ***** job concluded
+
+   *** parameter width =    4.750E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6329    at= 2.6767e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83331     at= 1.5754e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 8.9864e-10  targ= 1.1486e-09   trig= 2.4995e-10
+ tplh= 1.4735e-09  targ= 7.2236e-09   trig= 5.7500e-09
+ tp= 1.1861e-09
+
+          ***** job concluded
+
+   *** parameter width =    4.800E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6329    at= 2.6891e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83513     at= 1.5772e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 9.0022e-10  targ= 1.1499e-09   trig= 2.4970e-10
+ tplh= 1.4640e-09  targ= 7.2143e-09   trig= 5.7503e-09
+ tp= 1.1821e-09
+
+          ***** job concluded
+
+   *** parameter width =    4.850E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6329    at= 2.7020e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83539     at= 1.5774e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 9.0120e-10  targ= 1.1509e-09   trig= 2.4966e-10
+ tplh= 1.4641e-09  targ= 7.2145e-09   trig= 5.7503e-09
+ tp= 1.1827e-09
+
+          ***** job concluded
+
+   *** parameter width =    4.900E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6329    at= 2.7152e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83519     at= 1.5779e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 9.0186e-10  targ= 1.1516e-09   trig= 2.4969e-10
+ tplh= 1.4430e-09  targ= 7.1933e-09   trig= 5.7503e-09
+ tp= 1.1724e-09
+
+          ***** job concluded
+
+   *** parameter width =    4.950E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6329    at= 2.7289e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83439     at= 1.5760e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 9.0225e-10  targ= 1.1521e-09   trig= 2.4980e-10
+ tplh= 1.4551e-09  targ= 7.2053e-09   trig= 5.7502e-09
+ tp= 1.1787e-09
+
+          ***** job concluded
+
+   *** parameter width =    5.000E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6329    at= 2.3018e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83029     at= 5.7468e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 9.0186e-10  targ= 1.1522e-09   trig= 2.5037e-10
+ tplh= 1.4385e-09  targ= 7.1881e-09   trig= 5.7496e-09
+ tp= 1.1702e-09
+
+          ***** job concluded
+
+   *** parameter width =    5.050E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6338    at= 2.3092e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85373     at= 1.5759e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 9.0721e-10  targ= 1.1544e-09   trig= 2.4724e-10
+ tplh= 1.4121e-09  targ= 7.1649e-09   trig= 5.7528e-09
+ tp= 1.1597e-09
+
+          ***** job concluded
+
+   *** parameter width =    5.100E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6347    at= 2.3168e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83329     at= 1.5752e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 9.0319e-10  targ= 1.1534e-09   trig= 2.5020e-10
+ tplh= 1.4249e-09  targ= 7.1747e-09   trig= 5.7498e-09
+ tp= 1.1641e-09
+
+          ***** job concluded
+
+   *** parameter width =    5.150E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6357    at= 2.3247e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83026     at= 1.5756e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 9.0659e-10  targ= 1.1573e-09   trig= 2.5076e-10
+ tplh= 1.4128e-09  targ= 7.1620e-09   trig= 5.7492e-09
+ tp= 1.1597e-09
+
+          ***** job concluded
+
+   *** parameter width =    5.200E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6367    at= 2.3329e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86802     at= 5.7753e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 9.2541e-10  targ= 1.1711e-09   trig= 2.4566e-10
+ tplh= 1.4254e-09  targ= 7.1798e-09   trig= 5.7543e-09
+ tp= 1.1754e-09
+
+          ***** job concluded
+
+   *** parameter width =    5.250E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6378    at= 2.3415e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85432     at= 5.7519e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 9.2660e-10  targ= 1.1743e-09   trig= 2.4771e-10
+ tplh= 1.3874e-09  targ= 7.1397e-09   trig= 5.7523e-09
+ tp= 1.1570e-09
+
+          ***** job concluded
+
+   *** parameter width =    5.300E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6323    at= 2.7406e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86318     at= 5.7662e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 9.3602e-10  targ= 1.1817e-09   trig= 2.4572e-10
+ tplh= 1.3946e-09  targ= 7.1489e-09   trig= 5.7543e-09
+ tp= 1.1653e-09
+
+          ***** job concluded
+
+   *** parameter width =    5.350E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6452    at= 1.0283e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86926     at= 1.5800e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 9.3877e-10  targ= 1.1854e-09   trig= 2.4667e-10
+ tplh= 1.4090e-09  targ= 7.1623e-09   trig= 5.7533e-09
+ tp= 1.1739e-09
+
+          ***** job concluded
+
+   *** parameter width =    5.400E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6311    at= 2.6341e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85532     at= 1.5756e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 9.4422e-10  targ= 1.1909e-09   trig= 2.4664e-10
+ tplh= 1.3711e-09  targ= 7.1245e-09   trig= 5.7534e-09
+ tp= 1.1577e-09
+
+          ***** job concluded
+
+   *** parameter width =    5.450E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6306    at= 2.5991e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83545     at= 1.5746e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 9.4336e-10  targ= 1.1927e-09   trig= 2.4933e-10
+ tplh= 1.4064e-09  targ= 7.1570e-09   trig= 5.7507e-09
+ tp= 1.1749e-09
+
+          ***** job concluded
+
+   *** parameter width =    5.500E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6300    at= 2.5713e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.87626     at= 5.8115e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 9.7215e-10  targ= 1.2157e-09   trig= 2.4359e-10
+ tplh= 1.3430e-09  targ= 7.0994e-09   trig= 5.7564e-09
+ tp= 1.1576e-09
+
+          ***** job concluded
+
+   *** parameter width =    5.550E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6296    at= 2.5489e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86692     at= 1.5770e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0019e-09  targ= 1.2467e-09   trig= 2.4482e-10
+ tplh= 1.3583e-09  targ= 7.1135e-09   trig= 5.7552e-09
+ tp= 1.1801e-09
+
+          ***** job concluded
+
+   *** parameter width =    5.600E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.7110    at= 1.0335e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86369     at= 1.5764e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 9.8978e-10  targ= 1.2464e-09   trig= 2.5658e-10
+ tplh= 1.4006e-09  targ= 7.1440e-09   trig= 5.7434e-09
+ tp= 1.1952e-09
+
+          ***** job concluded
+
+   *** parameter width =    5.650E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6287    at= 2.5155e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86878     at= 5.7727e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0001e-09  targ= 1.2445e-09   trig= 2.4444e-10
+ tplh= 1.3309e-09  targ= 7.0865e-09   trig= 5.7556e-09
+ tp= 1.1655e-09
+
+          ***** job concluded
+
+   *** parameter width =    5.700E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6307    at= 1.0382e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86894     at= 1.5773e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 9.8796e-10  targ= 1.2327e-09   trig= 2.4470e-10
+ tplh= 1.3335e-09  targ= 7.0888e-09   trig= 5.7553e-09
+ tp= 1.1607e-09
+
+          ***** job concluded
+
+   *** parameter width =    5.750E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6280    at= 2.4924e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86646     at= 1.5768e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 9.7983e-10  targ= 1.2245e-09   trig= 2.4466e-10
+ tplh= 1.3301e-09  targ= 7.0855e-09   trig= 5.7553e-09
+ tp= 1.1550e-09
+
+          ***** job concluded
+
+   *** parameter width =    5.800E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6276    at= 2.4837e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86895     at= 1.5772e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 9.8132e-10  targ= 1.2256e-09   trig= 2.4426e-10
+ tplh= 1.3108e-09  targ= 7.0665e-09   trig= 5.7557e-09
+ tp= 1.1460e-09
+
+          ***** job concluded
+
+   *** parameter width =    5.850E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6273    at= 2.4764e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86958     at= 1.5772e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 9.9084e-10  targ= 1.2350e-09   trig= 2.4413e-10
+ tplh= 1.3202e-09  targ= 7.0761e-09   trig= 5.7559e-09
+ tp= 1.1555e-09
+
+          ***** job concluded
+
+   *** parameter width =    5.900E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6270    at= 2.4704e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85868     at= 1.5752e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0038e-09  targ= 1.2494e-09   trig= 2.4560e-10
+ tplh= 1.3037e-09  targ= 7.0581e-09   trig= 5.7544e-09
+ tp= 1.1538e-09
+
+          ***** job concluded
+
+   *** parameter width =    5.950E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6267    at= 2.4654e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86976     at= 1.5772e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0231e-09  targ= 1.2671e-09   trig= 2.4402e-10
+ tplh= 1.3100e-09  targ= 7.0659e-09   trig= 5.7560e-09
+ tp= 1.1665e-09
+
+          ***** job concluded
+
+   *** parameter width =    6.000E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6264    at= 2.4614e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86307     at= 5.7591e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0377e-09  targ= 1.2826e-09   trig= 2.4492e-10
+ tplh= 1.2914e-09  targ= 7.0465e-09   trig= 5.7551e-09
+ tp= 1.1645e-09
+
+          ***** job concluded
+
+   *** parameter width =    6.050E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6421    at= 1.0300e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85080     at= 5.7383e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0455e-09  targ= 1.2943e-09   trig= 2.4880e-10
+ tplh= 1.3135e-09  targ= 7.0647e-09   trig= 5.7512e-09
+ tp= 1.1795e-09
+
+          ***** job concluded
+
+   *** parameter width =    6.100E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6259    at= 2.4556e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86706     at= 1.5766e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0640e-09  targ= 1.3083e-09   trig= 2.4429e-10
+ tplh= 1.2912e-09  targ= 7.0469e-09   trig= 5.7557e-09
+ tp= 1.1776e-09
+
+          ***** job concluded
+
+   *** parameter width =    6.150E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6257    at= 2.4537e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83821     at= 5.7490e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0659e-09  targ= 1.3141e-09   trig= 2.4827e-10
+ tplh= 1.3134e-09  targ= 7.0651e-09   trig= 5.7517e-09
+ tp= 1.1896e-09
+
+          ***** job concluded
+
+   *** parameter width =    6.200E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6255    at= 2.4524e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86034     at= 1.5752e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0752e-09  targ= 1.3204e-09   trig= 2.4517e-10
+ tplh= 1.2806e-09  targ= 7.0354e-09   trig= 5.7548e-09
+ tp= 1.1779e-09
+
+          ***** job concluded
+
+   *** parameter width =    6.250E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6253    at= 2.4516e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84485     at= 1.5729e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0717e-09  targ= 1.3190e-09   trig= 2.4729e-10
+ tplh= 1.2835e-09  targ= 7.0362e-09   trig= 5.7527e-09
+ tp= 1.1776e-09
+
+          ***** job concluded
+
+   *** parameter width =    6.300E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6251    at= 2.4513e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83979     at= 1.5757e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0662e-09  targ= 1.3142e-09   trig= 2.4797e-10
+ tplh= 1.3009e-09  targ= 7.0529e-09   trig= 5.7520e-09
+ tp= 1.1836e-09
+
+          ***** job concluded
+
+   *** parameter width =    6.350E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6282    at= 1.0405e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83993     at= 5.7568e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0573e-09  targ= 1.3057e-09   trig= 2.4837e-10
+ tplh= 1.2942e-09  targ= 7.0458e-09   trig= 5.7516e-09
+ tp= 1.1757e-09
+
+          ***** job concluded
+
+   *** parameter width =    6.400E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6248    at= 2.4519e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86679     at= 1.5763e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0534e-09  targ= 1.2976e-09   trig= 2.4418e-10
+ tplh= 1.2601e-09  targ= 7.0160e-09   trig= 5.7558e-09
+ tp= 1.1568e-09
+
+          ***** job concluded
+
+   *** parameter width =    6.450E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6247    at= 2.4527e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84515     at= 1.5728e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0365e-09  targ= 1.2836e-09   trig= 2.4716e-10
+ tplh= 1.2672e-09  targ= 7.0200e-09   trig= 5.7528e-09
+ tp= 1.1518e-09
+
+          ***** job concluded
+
+   *** parameter width =    6.500E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6245    at= 2.4539e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.87116     at= 1.5770e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0502e-09  targ= 1.2937e-09   trig= 2.4353e-10
+ tplh= 1.2353e-09  targ= 6.9918e-09   trig= 5.7565e-09
+ tp= 1.1428e-09
+
+          ***** job concluded
+
+   *** parameter width =    6.550E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6244    at= 2.4554e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86982     at= 5.7672e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0527e-09  targ= 1.2964e-09   trig= 2.4370e-10
+ tplh= 1.2590e-09  targ= 7.0153e-09   trig= 5.7563e-09
+ tp= 1.1558e-09
+
+          ***** job concluded
+
+   *** parameter width =    6.600E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6243    at= 2.4571e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86878     at= 5.7647e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0551e-09  targ= 1.2989e-09   trig= 2.4383e-10
+ tplh= 1.2301e-09  targ= 6.9863e-09   trig= 5.7562e-09
+ tp= 1.1426e-09
+
+          ***** job concluded
+
+   *** parameter width =    6.650E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6242    at= 2.4592e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86677     at= 5.7604e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0602e-09  targ= 1.3043e-09   trig= 2.4409e-10
+ tplh= 1.2282e-09  targ= 6.9841e-09   trig= 5.7559e-09
+ tp= 1.1442e-09
+
+          ***** job concluded
+
+   *** parameter width =    6.700E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6241    at= 2.4615e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86265     at= 5.7517e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0649e-09  targ= 1.3095e-09   trig= 2.4465e-10
+ tplh= 1.2260e-09  targ= 6.9813e-09   trig= 5.7554e-09
+ tp= 1.1454e-09
+
+          ***** job concluded
+
+   *** parameter width =    6.750E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6240    at= 2.4641e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84785     at= 5.7282e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0658e-09  targ= 1.3125e-09   trig= 2.4669e-10
+ tplh= 1.2359e-09  targ= 6.9892e-09   trig= 5.7533e-09
+ tp= 1.1508e-09
+
+          ***** job concluded
+
+   *** parameter width =    6.800E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6239    at= 2.4669e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84119     at= 1.5753e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0695e-09  targ= 1.3171e-09   trig= 2.4761e-10
+ tplh= 1.2367e-09  targ= 6.9890e-09   trig= 5.7524e-09
+ tp= 1.1531e-09
+
+          ***** job concluded
+
+   *** parameter width =    6.850E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6238    at= 2.4699e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85901     at= 1.5746e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0813e-09  targ= 1.3264e-09   trig= 2.4512e-10
+ tplh= 1.2363e-09  targ= 6.9912e-09   trig= 5.7549e-09
+ tp= 1.1588e-09
+
+          ***** job concluded
+
+   *** parameter width =    6.900E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6238    at= 2.4728e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.87146     at= 5.7676e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0909e-09  targ= 1.3343e-09   trig= 2.4338e-10
+ tplh= 1.2012e-09  targ= 6.9578e-09   trig= 5.7566e-09
+ tp= 1.1461e-09
+
+          ***** job concluded
+
+   *** parameter width =    6.950E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6237    at= 2.4752e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.87671     at= 5.7592e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0978e-09  targ= 1.3404e-09   trig= 2.4264e-10
+ tplh= 1.2026e-09  targ= 6.9599e-09   trig= 5.7574e-09
+ tp= 1.1502e-09
+
+          ***** job concluded
+
+   *** parameter width =    7.000E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6286    at= 1.0359e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84586     at= 1.5724e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0917e-09  targ= 1.3393e-09   trig= 2.4761e-10
+ tplh= 1.2205e-09  targ= 6.9729e-09   trig= 5.7524e-09
+ tp= 1.1561e-09
+
+          ***** job concluded
+
+   *** parameter width =    7.050E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6235    at= 2.4805e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84844     at= 1.5726e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.0993e-09  targ= 1.3459e-09   trig= 2.4655e-10
+ tplh= 1.2220e-09  targ= 6.9754e-09   trig= 5.7535e-09
+ tp= 1.1606e-09
+
+          ***** job concluded
+
+   *** parameter width =    7.100E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6235    at= 2.4835e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86511     at= 1.5753e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.1093e-09  targ= 1.3535e-09   trig= 2.4422e-10
+ tplh= 1.2178e-09  targ= 6.9736e-09   trig= 5.7558e-09
+ tp= 1.1636e-09
+
+          ***** job concluded
+
+   *** parameter width =    7.150E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6234    at= 2.4866e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84150     at= 5.7439e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.1071e-09  targ= 1.3546e-09   trig= 2.4750e-10
+ tplh= 1.2016e-09  targ= 6.9541e-09   trig= 5.7525e-09
+ tp= 1.1544e-09
+
+          ***** job concluded
+
+   *** parameter width =    7.200E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6234    at= 2.4900e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86003     at= 1.5744e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.1170e-09  targ= 1.3619e-09   trig= 2.4492e-10
+ tplh= 1.1863e-09  targ= 6.9414e-09   trig= 5.7551e-09
+ tp= 1.1516e-09
+
+          ***** job concluded
+
+   *** parameter width =    7.250E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6233    at= 2.4935e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84250     at= 5.7541e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.1164e-09  targ= 1.3638e-09   trig= 2.4734e-10
+ tplh= 1.1949e-09  targ= 6.9475e-09   trig= 5.7527e-09
+ tp= 1.1557e-09
+
+          ***** job concluded
+
+   *** parameter width =    7.300E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6233    at= 2.4973e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84413     at= 5.7203e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.1210e-09  targ= 1.3682e-09   trig= 2.4711e-10
+ tplh= 1.1908e-09  targ= 6.9437e-09   trig= 5.7529e-09
+ tp= 1.1559e-09
+
+          ***** job concluded
+
+   *** parameter width =    7.350E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6248    at= 1.0352e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84275     at= 5.7520e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.1242e-09  targ= 1.3717e-09   trig= 2.4752e-10
+ tplh= 1.1867e-09  targ= 6.9392e-09   trig= 5.7525e-09
+ tp= 1.1555e-09
+
+          ***** job concluded
+
+   *** parameter width =    7.400E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6232    at= 2.5053e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84164     at= 5.7395e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.1280e-09  targ= 1.3755e-09   trig= 2.4745e-10
+ tplh= 1.1850e-09  targ= 6.9376e-09   trig= 5.7525e-09
+ tp= 1.1565e-09
+
+          ***** job concluded
+
+   *** parameter width =    7.450E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6232    at= 2.5096e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.88327     at= 5.8170e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.1417e-09  targ= 1.3834e-09   trig= 2.4167e-10
+ tplh= 1.1566e-09  targ= 6.9149e-09   trig= 5.7583e-09
+ tp= 1.1492e-09
+
+          ***** job concluded
+
+   *** parameter width =    7.500E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6232    at= 1.0334e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84309     at= 1.5749e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.1478e-09  targ= 1.3951e-09   trig= 2.4724e-10
+ tplh= 1.1817e-09  targ= 6.9344e-09   trig= 5.7528e-09
+ tp= 1.1647e-09
+
+          ***** job concluded
+
+   *** parameter width =    7.550E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6246    at= 1.0334e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83691     at= 1.5726e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.1504e-09  targ= 1.3987e-09   trig= 2.4829e-10
+ tplh= 1.1893e-09  targ= 6.9410e-09   trig= 5.7517e-09
+ tp= 1.1698e-09
+
+          ***** job concluded
+
+   *** parameter width =    7.600E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6206    at= 2.2656e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83973     at= 5.7311e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.1570e-09  targ= 1.4043e-09   trig= 2.4735e-10
+ tplh= 1.1717e-09  targ= 6.9244e-09   trig= 5.7526e-09
+ tp= 1.1644e-09
+
+          ***** job concluded
+
+   *** parameter width =    7.650E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6215    at= 1.0278e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84188     at= 5.7363e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.1616e-09  targ= 1.4087e-09   trig= 2.4717e-10
+ tplh= 1.1691e-09  targ= 6.9219e-09   trig= 5.7528e-09
+ tp= 1.1653e-09
+
+          ***** job concluded
+
+   *** parameter width =    7.700E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6387    at= 1.0289e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84356     at= 1.5747e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.1612e-09  targ= 1.4106e-09   trig= 2.4934e-10
+ tplh= 1.1752e-09  targ= 6.9258e-09   trig= 5.7507e-09
+ tp= 1.1682e-09
+
+          ***** job concluded
+
+   *** parameter width =    7.750E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6204    at= 2.2676e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84116     at= 5.7327e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.1691e-09  targ= 1.4162e-09   trig= 2.4713e-10
+ tplh= 1.1580e-09  targ= 6.9108e-09   trig= 5.7529e-09
+ tp= 1.1635e-09
+
+          ***** job concluded
+
+   *** parameter width =    7.800E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6383    at= 1.0306e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86753     at= 1.5752e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.1745e-09  targ= 1.4205e-09   trig= 2.4594e-10
+ tplh= 1.1548e-09  targ= 6.9089e-09   trig= 5.7541e-09
+ tp= 1.1647e-09
+
+          ***** job concluded
+
+   *** parameter width =    7.850E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6203    at= 2.2689e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84218     at= 5.7261e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.1758e-09  targ= 1.4228e-09   trig= 2.4697e-10
+ tplh= 1.1495e-09  targ= 6.9025e-09   trig= 5.7530e-09
+ tp= 1.1627e-09
+
+          ***** job concluded
+
+   *** parameter width =    7.900E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6203    at= 2.2695e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.83858     at= 5.7255e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.1780e-09  targ= 1.4255e-09   trig= 2.4746e-10
+ tplh= 1.1688e-09  targ= 6.9213e-09   trig= 5.7525e-09
+ tp= 1.1734e-09
+
+          ***** job concluded
+
+   *** parameter width =    7.950E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6218    at= 1.0334e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86985     at= 1.5756e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.1878e-09  targ= 1.4312e-09   trig= 2.4333e-10
+ tplh= 1.1367e-09  targ= 6.8934e-09   trig= 5.7567e-09
+ tp= 1.1623e-09
+
+          ***** job concluded
+
+   *** parameter width =    8.000E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6203    at= 1.0355e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86751     at= 5.7503e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.1905e-09  targ= 1.4340e-09   trig= 2.4345e-10
+ tplh= 1.1258e-09  targ= 6.8823e-09   trig= 5.7565e-09
+ tp= 1.1582e-09
+
+          ***** job concluded
+
+   *** parameter width =    8.050E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6222    at= 1.0332e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.87346     at= 5.7631e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.1949e-09  targ= 1.4378e-09   trig= 2.4289e-10
+ tplh= 1.1278e-09  targ= 6.8849e-09   trig= 5.7571e-09
+ tp= 1.1614e-09
+
+          ***** job concluded
+
+   *** parameter width =    8.100E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6200    at= 2.2717e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86894     at= 5.7413e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.1991e-09  targ= 1.4423e-09   trig= 2.4322e-10
+ tplh= 1.1479e-09  targ= 6.9047e-09   trig= 5.7568e-09
+ tp= 1.1735e-09
+
+          ***** job concluded
+
+   *** parameter width =    8.150E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6200    at= 2.2722e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84234     at= 5.7249e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.1960e-09  targ= 1.4429e-09   trig= 2.4690e-10
+ tplh= 1.1375e-09  targ= 6.8906e-09   trig= 5.7531e-09
+ tp= 1.1668e-09
+
+          ***** job concluded
+
+   *** parameter width =    8.200E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6234    at= 2.5946e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84444     at= 5.7390e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.2475e-09  targ= 1.4946e-09   trig= 2.4709e-10
+ tplh= 1.1346e-09  targ= 6.8875e-09   trig= 5.7529e-09
+ tp= 1.1910e-09
+
+          ***** job concluded
+
+   *** parameter width =    8.250E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6255    at= 1.0316e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84117     at= 5.7270e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.2576e-09  targ= 1.5054e-09   trig= 2.4783e-10
+ tplh= 1.1174e-09  targ= 6.8695e-09   trig= 5.7522e-09
+ tp= 1.1875e-09
+
+          ***** job concluded
+
+   *** parameter width =    8.300E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6235    at= 2.6090e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86957     at= 1.5752e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.2747e-09  targ= 1.5183e-09   trig= 2.4361e-10
+ tplh= 1.1292e-09  targ= 6.8856e-09   trig= 5.7564e-09
+ tp= 1.2019e-09
+
+          ***** job concluded
+
+   *** parameter width =    8.350E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6236    at= 2.6165e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86248     at= 5.7392e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.2826e-09  targ= 1.5272e-09   trig= 2.4460e-10
+ tplh= 1.1043e-09  targ= 6.8597e-09   trig= 5.7554e-09
+ tp= 1.1935e-09
+
+          ***** job concluded
+
+   *** parameter width =    8.400E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6236    at= 2.6243e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.87200     at= 5.7886e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.2938e-09  targ= 1.5371e-09   trig= 2.4329e-10
+ tplh= 1.1013e-09  targ= 6.8580e-09   trig= 5.7567e-09
+ tp= 1.1975e-09
+
+          ***** job concluded
+
+   *** parameter width =    8.450E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6197    at= 2.2751e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86362     at= 1.5739e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.2598e-09  targ= 1.5037e-09   trig= 2.4391e-10
+ tplh= 1.1076e-09  targ= 6.8637e-09   trig= 5.7561e-09
+ tp= 1.1837e-09
+
+          ***** job concluded
+
+   *** parameter width =    8.500E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6236    at= 1.0334e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85245     at= 5.7199e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.2715e-09  targ= 1.5175e-09   trig= 2.4601e-10
+ tplh= 1.1130e-09  targ= 6.8670e-09   trig= 5.7540e-09
+ tp= 1.1922e-09
+
+          ***** job concluded
+
+   *** parameter width =    8.550E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6459    at= 1.0292e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86631     at= 1.5738e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.2825e-09  targ= 1.5297e-09   trig= 2.4718e-10
+ tplh= 1.1141e-09  targ= 6.8669e-09   trig= 5.7528e-09
+ tp= 1.1983e-09
+
+          ***** job concluded
+
+   *** parameter width =    8.600E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6199    at= 1.0353e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84253     at= 1.5719e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.2946e-09  targ= 1.5414e-09   trig= 2.4687e-10
+ tplh= 1.0957e-09  targ= 6.8489e-09   trig= 5.7531e-09
+ tp= 1.1952e-09
+
+          ***** job concluded
+
+   *** parameter width =    8.650E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6201    at= 1.0278e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84080     at= 5.7234e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.3044e-09  targ= 1.5515e-09   trig= 2.4714e-10
+ tplh= 1.1056e-09  targ= 6.8585e-09   trig= 5.7529e-09
+ tp= 1.2050e-09
+
+          ***** job concluded
+
+   *** parameter width =    8.700E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6196    at= 1.0353e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.86805     at= 5.7378e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.3203e-09  targ= 1.5636e-09   trig= 2.4328e-10
+ tplh= 1.1077e-09  targ= 6.8644e-09   trig= 5.7567e-09
+ tp= 1.2140e-09
+
+          ***** job concluded
+
+   *** parameter width =    8.750E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6226    at= 1.0327e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85663     at= 5.7138e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.3259e-09  targ= 1.5711e-09   trig= 2.4528e-10
+ tplh= 1.1215e-09  targ= 6.8762e-09   trig= 5.7547e-09
+ tp= 1.2237e-09
+
+          ***** job concluded
+
+   *** parameter width =    8.800E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6233    at= 1.0330e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.87236     at= 5.7551e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.3378e-09  targ= 1.5809e-09   trig= 2.4319e-10
+ tplh= 1.0717e-09  targ= 6.8285e-09   trig= 5.7568e-09
+ tp= 1.2047e-09
+
+          ***** job concluded
+
+   *** parameter width =    8.850E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6194    at= 2.2789e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84369     at= 1.5717e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.3397e-09  targ= 1.5864e-09   trig= 2.4663e-10
+ tplh= 1.0818e-09  targ= 6.8352e-09   trig= 5.7534e-09
+ tp= 1.2108e-09
+
+          ***** job concluded
+
+   *** parameter width =    8.900E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6203    at= 1.0278e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.87380     at= 1.5758e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.3542e-09  targ= 1.5967e-09   trig= 2.4257e-10
+ tplh= 1.0734e-09  targ= 6.8308e-09   trig= 5.7574e-09
+ tp= 1.2138e-09
+
+          ***** job concluded
+
+   *** parameter width =    8.950E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6217    at= 1.0354e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84278     at= 1.5718e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.3535e-09  targ= 1.6006e-09   trig= 2.4708e-10
+ tplh= 1.0756e-09  targ= 6.8286e-09   trig= 5.7529e-09
+ tp= 1.2146e-09
+
+          ***** job concluded
+
+   *** parameter width =    9.000E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6193    at= 2.2805e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85375     at= 1.5718e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.3633e-09  targ= 1.6085e-09   trig= 2.4522e-10
+ tplh= 1.0684e-09  targ= 6.8232e-09   trig= 5.7548e-09
+ tp= 1.2158e-09
+
+          ***** job concluded
+
+   *** parameter width =    9.050E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6196    at= 1.0352e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85303     at= 1.5717e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.3691e-09  targ= 1.6145e-09   trig= 2.4537e-10
+ tplh= 1.0659e-09  targ= 6.8205e-09   trig= 5.7546e-09
+ tp= 1.2175e-09
+
+          ***** job concluded
+
+   *** parameter width =    9.100E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6203    at= 1.0352e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84418     at= 5.7157e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.3725e-09  targ= 1.6191e-09   trig= 2.4669e-10
+ tplh= 1.0665e-09  targ= 6.8198e-09   trig= 5.7533e-09
+ tp= 1.2195e-09
+
+          ***** job concluded
+
+   *** parameter width =    9.150E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6205    at= 1.0352e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84702     at= 1.5739e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.3785e-09  targ= 1.6248e-09   trig= 2.4633e-10
+ tplh= 1.0631e-09  targ= 6.8167e-09   trig= 5.7537e-09
+ tp= 1.2208e-09
+
+          ***** job concluded
+
+   *** parameter width =    9.200E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6239    at= 1.0334e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84458     at= 1.5715e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.3819e-09  targ= 1.6291e-09   trig= 2.4714e-10
+ tplh= 1.0891e-09  targ= 6.8420e-09   trig= 5.7529e-09
+ tp= 1.2355e-09
+
+          ***** job concluded
+
+   *** parameter width =    9.250E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6197    at= 1.0352e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85307     at= 5.7157e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.3897e-09  targ= 1.6351e-09   trig= 2.4537e-10
+ tplh= 1.0656e-09  targ= 6.8202e-09   trig= 5.7546e-09
+ tp= 1.2277e-09
+
+          ***** job concluded
+
+   *** parameter width =    9.300E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6220    at= 1.0353e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.87251     at= 1.5752e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.3983e-09  targ= 1.6413e-09   trig= 2.4299e-10
+ tplh= 1.0854e-09  targ= 6.8424e-09   trig= 5.7570e-09
+ tp= 1.2419e-09
+
+          ***** job concluded
+
+   *** parameter width =    9.350E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6222    at= 1.0353e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.87207     at= 1.5750e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.4020e-09  targ= 1.6451e-09   trig= 2.4308e-10
+ tplh= 1.0828e-09  targ= 6.8397e-09   trig= 5.7569e-09
+ tp= 1.2424e-09
+
+          ***** job concluded
+
+   *** parameter width =    9.400E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6233    at= 1.0329e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84762     at= 5.7401e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.3987e-09  targ= 1.6453e-09   trig= 2.4663e-10
+ tplh= 1.0929e-09  targ= 6.8463e-09   trig= 5.7534e-09
+ tp= 1.2458e-09
+
+          ***** job concluded
+
+   *** parameter width =    9.450E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6240    at= 1.0334e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84770     at= 5.7378e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.4015e-09  targ= 1.6482e-09   trig= 2.4671e-10
+ tplh= 1.0904e-09  targ= 6.8437e-09   trig= 5.7533e-09
+ tp= 1.2460e-09
+
+          ***** job concluded
+
+   *** parameter width =    9.500E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6250    at= 1.0319e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84775     at= 5.7358e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.4038e-09  targ= 1.6506e-09   trig= 2.4685e-10
+ tplh= 1.0881e-09  targ= 6.8413e-09   trig= 5.7531e-09
+ tp= 1.2460e-09
+
+          ***** job concluded
+
+   *** parameter width =    9.550E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6197    at= 1.0279e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85067     at= 1.5712e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.4081e-09  targ= 1.6538e-09   trig= 2.4570e-10
+ tplh= 1.0807e-09  targ= 6.8350e-09   trig= 5.7543e-09
+ tp= 1.2444e-09
+
+          ***** job concluded
+
+   *** parameter width =    9.600E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6196    at= 1.0353e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84771     at= 5.7321e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.4091e-09  targ= 1.6552e-09   trig= 2.4611e-10
+ tplh= 1.0790e-09  targ= 6.8329e-09   trig= 5.7539e-09
+ tp= 1.2441e-09
+
+          ***** job concluded
+
+   *** parameter width =    9.650E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6202    at= 1.0352e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.85493     at= 1.5694e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.4122e-09  targ= 1.6573e-09   trig= 2.4518e-10
+ tplh= 1.0714e-09  targ= 6.8262e-09   trig= 5.7548e-09
+ tp= 1.2418e-09
+
+          ***** job concluded
+
+   *** parameter width =    9.700E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6190    at= 1.0278e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84803     at= 1.5733e-08
+             from=   0.          to= 2.0000e-08
+ tphl= 1.4115e-09  targ= 1.6575e-09   trig= 2.4598e-10
+ tplh= 1.0719e-09  targ= 6.8259e-09   trig= 5.7540e-09
+ tp= 1.2417e-09
+
+          ***** job concluded
+
+   *** parameter width =    9.750E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6207    at= 1.0325e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84481     at= 5.7132e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.4308e-09  targ= 1.6775e-09   trig= 2.4665e-10
+ tplh= 1.0400e-09  targ= 6.7934e-09   trig= 5.7533e-09
+ tp= 1.2354e-09
+
+          ***** job concluded
+
+   *** parameter width =    9.800E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6192    at= 1.0353e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84503     at= 5.7128e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.4340e-09  targ= 1.6804e-09   trig= 2.4642e-10
+ tplh= 1.0372e-09  targ= 6.7908e-09   trig= 5.7536e-09
+ tp= 1.2356e-09
+
+          ***** job concluded
+
+   *** parameter width =    9.850E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6192    at= 1.0353e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84481     at= 5.7129e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.4326e-09  targ= 1.6791e-09   trig= 2.4645e-10
+ tplh= 1.0361e-09  targ= 6.7896e-09   trig= 5.7535e-09
+ tp= 1.2344e-09
+
+          ***** job concluded
+
+   *** parameter width =    9.900E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6196    at= 1.0352e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84448     at= 5.7131e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.4305e-09  targ= 1.6771e-09   trig= 2.4655e-10
+ tplh= 1.0356e-09  targ= 6.7891e-09   trig= 5.7535e-09
+ tp= 1.2331e-09
+
+          ***** job concluded
+
+   *** parameter width =    9.950E-05 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6195    at= 1.0352e-08
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84402     at= 5.7135e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.4280e-09  targ= 1.6746e-09   trig= 2.4660e-10
+ tplh= 1.0511e-09  targ= 6.8045e-09   trig= 5.7534e-09
+ tp= 1.2396e-09
+
+          ***** job concluded
+
+   *** parameter width =    1.000E-04 ***
+
+ ******  
+ *ac analysis for inv
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+ vmax=   2.6263    at= 3.0148e-10
+             from=   0.          to= 2.0000e-08
+ vmin=  -0.84761     at= 5.7253e-09
+             from=   0.          to= 2.0000e-08
+ tphl= 1.4523e-09  targ= 1.6994e-09   trig= 2.4705e-10
+ tplh= 1.0695e-09  targ= 6.8225e-09   trig= 5.7530e-09
+ tp= 1.2609e-09
+
+          ***** job concluded
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ *ac analysis for inv
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     8
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =       8 # elements   =       4
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       2 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           1.01           1        1351
+  transient         13.35     1930193      372082      112548 rev=      8653
+  readin             0.08
+  errchk             0.01
+  setup              0.01
+  output             0.30
+
+
+           peak memory used         37.04 megabytes
+           total cpu time           18.86 seconds
+           total elapsed time       18.95 seconds
+           job started at     00:40:05 12/05/2018
+           job ended   at     00:40:24 12/05/2018
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.08(s)

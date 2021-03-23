@@ -1,0 +1,232 @@
+ ****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+  Copyright (C) 2012 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: mux4-1.sp                                                         
+  Command line options: -i mux4-1.sp -o mux4-1.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   hmr                  HOSTNAME: BF-201911211153 
+  lic: HOSTID: "70c94e3215e4 0c9d922ee649 00ffaabbccdd 005056c00001 005056c00008
+  70c94e31fa78 12c94e3
+  lic: Using FLEXlm license file: 
+  lic: D:\synopsys\Hspice_G-2012.06-SP1\license.dat 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 31-dec-2019/2019.12 
+  lic: NODE LOCKED license on hostid "70c94e3215e4 0c9d922ee649 00ffaabbccdd 005
+ 056c00001 005056c0000
+  lic:   
+ Init: read install configuration file: d:\synopsys\Hspice_G-2012.06-SP1\meta.cfg
+  **warning** (mux4-1.sp:7) ucirt    is not level=   1 model parameter. Parameter has been ignored.
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ *nand gate hspice file
+
+  ******  mos   model parameters tnom=  25.000 temp=  25.000 *****
+ ***************************************************************************
+ *** common model parameters  model name:   0:nmos     model type:nmos   ***
+ ***************************************************************************
+     names  values   units     names  values   units     names  values   units
+     -----  ------   -----     -----  ------   -----     -----  ------   -----
+
+   1*** geometry parameters ***
+       ld= 150.00n meters      lmlt=   1.00                wd=   0.    meters 
+     wmlt=   1.00                xl=   0.    meters        xw=   0.    meters 
+     lref=   0.    meters      wref=   0.    meters      lref=   0.    meters 
+     wref=   0.    meters     xlref=   0.    meters     xwref=   0.    meters 
+     lmin=   0.    meters      wmin=   0.    meters      lmax=   0.    meters 
+     wmax=   0.    meters 
+
+   2*** threshold voltage parameters ***
+      vto= 740.00m volts        nss= 100.00g 1/cm**2      tpg=   1.00         
+      phi= 600.00m volts      gamma= 540.00m v**0.5      bulk=  gnd           
+    ngate=   0.    cm**3       nsub= 5.3e+15 1/cm**3   delvto=   0.    volts  
+
+   3*** gate overlap capacitance parameters ***
+     cgbo=   0.    f/meter     cgdo= 430.00p f/meter     cgso= 430.00p f/meter
+     meto=   0.    meters 
+
+   4*** gate capacitance parameters ***
+    capop=   2.00               cf1=   0.    volts        cf2= 100.00m volts  
+      cf3=   1.00  volts        cf4=  50.00               cf5= 666.67m        
+      cf6= 500.00               xqc= 500.00m              tox=  20.00n meters 
+      cox=   1.73m f/m**2 
+
+   5*** diffusion parasitic parameters ***
+      acm=   0.                  is=  10.00f amps          js=   0.    a/m**2 
+      jsw=   0.    amp/m        nds=   1.00               cbd=   0.    farad  
+      cbs=   0.    farad         cj= 300.00u f/m**2      cjsw= 800.00p f/m    
+   cjgate= 800.00p f/m           mj= 660.00m             mjsw= 240.00m        
+       pb= 580.00m volts        php= 580.00m volts         tt=   0.    secs   
+     hdif=   0.    meters      ldif=   0.    meters        rd=   0.    ohms   
+       rs=   0.    ohms         rsh=  70.00  ohms/sq       fc=   0.           
+    alpha=   0.                 vcr=   0.    volts      iirat=   0.           
+      rdc=   0.    ohms         rsc=   0.    ohms           n=   1.00         
+     vnds=  -1.00  volts  
+
+   6*** temperature effect parameters ***
+     tlev=   0.               tlevc=   0.                  eg=   1.11  ev     
+     gap1= 702.00u ev/deg      gap2=   1.11k deg          xti=   0.           
+      bex=  -1.50               tcv=   0.    v/deg k      trd=   0.    /deg   
+      trs=   0.    /deg         cta=   0.    /deg         ctp=   0.    /deg   
+
+   7*** noise parameters ***
+       kf=   0.                  af=   1.00              nlev=   2.00         
+   gdsnoi=   1.00         
+
+   ***  level  1  model parameters  ***
+
+   lambda=  37.00m /v            kp=  80.00u a/v**2 
+  **info** (mux4-1.sp:31) DC voltage reset to initial transient source value              in source        0:vd0                 new dc=  0.0000D+00
+  
+
+ **warning** the following singular supplies were terminated to 1 meg resistor 
+   supply       node1            node2
+  v1                      0:1                defined in subckt 0                     0:0                defined in subckt 0               
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ *nand gate hspice file
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:1       =   1.8000  0:d0      =   0.      0:d1      =   0.     
+ +0:d2      =   0.      0:d3      =   0.      0:s0      =   0.     
+ +0:s0f     =   0.      0:s1      =   0.      0:s1f     =   0.     
+ +0:t0      =-3.020e-20 0:t1      =-3.020e-20 0:t2      =-3.020e-20
+ +0:t3      =-3.020e-20 0:vo      =-1.503e-20
+
+
+ **** voltage sources
+
+ subckt                                                                    
+ element  0:v1       0:vd0      0:vd1      0:vd2      0:vd3      0:vs0     
+  volts      1.8000     0.         0.         0.         0.         0.     
+  current -1.800e-06    0.         0.         0.         0.         0.     
+  power    3.240e-06    0.         0.         0.         0.         0.     
+
+ subckt                                   
+ element  0:vs0f     0:vs1      0:vs1f    
+  volts      0.         0.         0.     
+  current    0.         0.         0.     
+  power      0.         0.         0.     
+
+     total voltage source power dissipation=  3.240e-06       watts
+
+
+
+
+ **** mosfets
+
+
+ subckt                                                                    
+ element  0:mn0      0:mn1      0:mn2      0:mn3      0:mn4      0:mn5     
+ model    0:nmos     0:nmos     0:nmos     0:nmos     0:nmos     0:nmos    
+ region       Cutoff     Cutoff     Cutoff     Cutoff     Cutoff     Cutoff
+  id         0.         0.         0.         0.         0.         0.     
+  ibs        0.         0.         0.         0.         0.         0.     
+  ibd        0.         0.         0.         0.         0.         0.     
+  vgs      3.020e-20  1.503e-20  3.020e-20  1.503e-20  3.020e-20  1.503e-20
+  vds      3.020e-20 -1.518e-20  3.020e-20 -1.518e-20  3.020e-20 -1.518e-20
+  vbs      3.020e-20  1.503e-20  3.020e-20  1.503e-20  3.020e-20  1.503e-20
+  vth        0.7400     0.7400     0.7400     0.7400     0.7400     0.7400 
+  vdsat      0.         0.         0.         0.         0.         0.     
+  vod       -0.7400    -0.7400    -0.7400    -0.7400    -0.7400    -0.7400 
+  beta     2.286e-04  2.286e-04  2.286e-04  2.286e-04  2.286e-04  2.286e-04
+  gam eff    0.5400     0.5400     0.5400     0.5400     0.5400     0.5400 
+  gm         0.         0.         0.         0.         0.         0.     
+  gds        0.         0.         0.         0.         0.         0.     
+  gmb        0.         0.         0.         0.         0.         0.     
+  cdtot    8.650e-16  8.671e-16  8.650e-16  8.671e-16  8.650e-16  8.671e-16
+  cgtot    2.833e-15  2.833e-15  2.833e-15  2.833e-15  2.833e-15  2.833e-15
+  cstot    8.671e-16  8.650e-16  8.671e-16  8.650e-16  8.671e-16  8.650e-16
+  cbtot    1.101e-15  1.101e-15  1.101e-15  1.101e-15  1.101e-15  1.101e-15
+  cgs      8.671e-16  8.650e-16  8.671e-16  8.650e-16  8.671e-16  8.650e-16
+  cgd      8.650e-16  8.671e-16  8.650e-16  8.671e-16  8.650e-16  8.671e-16
+
+
+
+ subckt                        
+ element  0:mn6      0:mn7     
+ model    0:nmos     0:nmos    
+ region       Cutoff     Cutoff
+  id         0.         0.     
+  ibs        0.         0.     
+  ibd        0.         0.     
+  vgs      3.020e-20  1.503e-20
+  vds      3.020e-20 -1.518e-20
+  vbs      3.020e-20  1.503e-20
+  vth        0.7400     0.7400 
+  vdsat      0.         0.     
+  vod       -0.7400    -0.7400 
+  beta     2.286e-04  2.286e-04
+  gam eff    0.5400     0.5400 
+  gm         0.         0.     
+  gds        0.         0.     
+  gmb        0.         0.     
+  cdtot    8.650e-16  8.671e-16
+  cgtot    2.833e-15  2.833e-15
+  cstot    8.671e-16  8.650e-16
+  cbtot    1.101e-15  1.101e-15
+  cgs      8.671e-16  8.650e-16
+  cgd      8.650e-16  8.671e-16
+
+
+
+
+          ***** job concluded
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ *nand gate hspice file
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     8
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      15 # elements   =      18
+  # resistors   =       1 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       9
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       8 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1          32
+  transient          0.07         101        1422         406 rev=        16
+  readin             0.08
+  errchk             0.01
+  setup              0.02
+  output             0.00
+
+
+           peak memory used         36.27 megabytes
+           total cpu time            0.25 seconds
+           total elapsed time        0.37 seconds
+           job started at     18:56:27 12/20/2018
+           job ended   at     18:56:27 12/20/2018
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.11(s)

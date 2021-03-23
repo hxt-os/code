@@ -1,0 +1,47 @@
+***** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******
+ Input File: invdc_l2.sp
+ lic:
+ lic: FLEXlm: v10.9.8
+ lic: USER:   hmr                  HOSTNAME: BF-201911211153
+ lic: HOSTID: "70c94e3215e4 0c9d922ee649 00ffaabbccdd 005056c00001 005056c00008 70c94e31fa78 12c94e3
+ lic: Using FLEXlm license file:
+ lic: D:\synopsys\Hspice_G-2012.06-SP1\license.dat
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-dec-2019/2019.12
+ lic: NODE LOCKED license on hostid "70c94e3215e4 0c9d922ee649 00ffaabbccdd 005056c00001 005056c0000
+ lic:
+ init: begin read circuit files,  cpu clock=  1.06E-01
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\behave\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\behave\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\AD\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\XILINX\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\TLINE\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\TI\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\SIGNET\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\PCI\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\LIN_TECH\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\FET\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\DIO\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\COMLINE\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\BURR_BRN\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\BJT\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\behave\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\AD\
+       option post =     2.00
+       option runlvl
+       option abstol =    1.000E-06
+       option reltol =    1.000E-06
+       option post
+       option ingold
+ init: end read circuit files,  cpu clock=  2.12E-01 peak memory=        48 mb
+ init: begin check errors,  cpu clock=  2.12E-01
+ init: end check errors,  cpu clock=  2.31E-01 peak memory=        48 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  2.31E-01
+       establish matrix -- done,  cpu clock=  2.44E-01 peak memory=        48 mb
+       re-order matrix -- done,  cpu clock=  2.52E-01 peak memory=        48 mb
+ init: end setup matrix,  cpu clock=  2.58E-01 peak memory=        48 mb
+ output: invdc_l2.sw0
+ sweep: dc dc0    begin, #sweeps= 181 cpu clock=  2.68E-01
+ sweep: dc dc0    end,  cpu clock=  2.77E-01 peak memory=        48 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

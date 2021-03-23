@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='G-2012.06-SP1 32-BIT'
+.TITLE '*ac analysis for inv'
+ vmax             vmin             tphl             tplh              
+ tp               temper           alter#            
+    2.6305          -0.8274         6.956e-10        1.892e-09        
+  1.294e-09         25.0000        1                 

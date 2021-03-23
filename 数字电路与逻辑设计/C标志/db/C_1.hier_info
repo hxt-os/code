@@ -1,0 +1,7 @@
+|C
+input => i.DATAIN
+EN => i.ENA
+Clk => i.CLK
+output <= i.DB_MAX_OUTPUT_PORT_TYPE
+
+

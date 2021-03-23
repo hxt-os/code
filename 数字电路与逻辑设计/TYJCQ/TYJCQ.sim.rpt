@@ -1,0 +1,367 @@
+Simulator report for TYJCQ
+Mon Dec 09 16:32:21 2019
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 162 nodes    ;
+; Simulation Coverage         ;      55.56 % ;
+; Total Number of Transitions ; 14977        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; TYJCQ.vwf  ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      55.56 % ;
+; Total nodes checked                                 ; 162          ;
+; Total output ports checked                          ; 162          ;
+; Total output ports with complete 1/0-value coverage ; 90           ;
+; Total output ports with no 1/0-value coverage       ; 44           ;
+; Total output ports with no 1-value coverage         ; 44           ;
+; Total output ports with no 0-value coverage         ; 72           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                ;
++--------------------+--------------------+------------------+
+; Node Name          ; Output Port Name   ; Output Port Type ;
++--------------------+--------------------+------------------+
+; |TYJCQ|BO[0]~0     ; |TYJCQ|BO[0]~0     ; out              ;
+; |TYJCQ|A~2         ; |TYJCQ|A~2         ; out              ;
+; |TYJCQ|A~3         ; |TYJCQ|A~3         ; out              ;
+; |TYJCQ|A~6         ; |TYJCQ|A~6         ; out              ;
+; |TYJCQ|A~7         ; |TYJCQ|A~7         ; out              ;
+; |TYJCQ|B~2         ; |TYJCQ|B~2         ; out              ;
+; |TYJCQ|B~3         ; |TYJCQ|B~3         ; out              ;
+; |TYJCQ|B~6         ; |TYJCQ|B~6         ; out              ;
+; |TYJCQ|B~7         ; |TYJCQ|B~7         ; out              ;
+; |TYJCQ|B~10        ; |TYJCQ|B~10        ; out              ;
+; |TYJCQ|B~11        ; |TYJCQ|B~11        ; out              ;
+; |TYJCQ|B~14        ; |TYJCQ|B~14        ; out              ;
+; |TYJCQ|B~15        ; |TYJCQ|B~15        ; out              ;
+; |TYJCQ|C~2         ; |TYJCQ|C~2         ; out              ;
+; |TYJCQ|C~3         ; |TYJCQ|C~3         ; out              ;
+; |TYJCQ|C~6         ; |TYJCQ|C~6         ; out              ;
+; |TYJCQ|C~7         ; |TYJCQ|C~7         ; out              ;
+; |TYJCQ|C~10        ; |TYJCQ|C~10        ; out              ;
+; |TYJCQ|C~11        ; |TYJCQ|C~11        ; out              ;
+; |TYJCQ|C~14        ; |TYJCQ|C~14        ; out              ;
+; |TYJCQ|C~15        ; |TYJCQ|C~15        ; out              ;
+; |TYJCQ|C~18        ; |TYJCQ|C~18        ; out              ;
+; |TYJCQ|C~19        ; |TYJCQ|C~19        ; out              ;
+; |TYJCQ|C~22        ; |TYJCQ|C~22        ; out              ;
+; |TYJCQ|C~23        ; |TYJCQ|C~23        ; out              ;
+; |TYJCQ|BO[0]~1     ; |TYJCQ|BO[0]~1     ; out              ;
+; |TYJCQ|BO[1]~2     ; |TYJCQ|BO[1]~2     ; out              ;
+; |TYJCQ|BO[1]~3     ; |TYJCQ|BO[1]~3     ; out              ;
+; |TYJCQ|BO[2]$latch ; |TYJCQ|BO[2]$latch ; out              ;
+; |TYJCQ|BO[2]~4     ; |TYJCQ|BO[2]~4     ; out              ;
+; |TYJCQ|BO[2]~5     ; |TYJCQ|BO[2]~5     ; out              ;
+; |TYJCQ|BO[3]$latch ; |TYJCQ|BO[3]$latch ; out              ;
+; |TYJCQ|BO[3]~6     ; |TYJCQ|BO[3]~6     ; out              ;
+; |TYJCQ|BO[3]~7     ; |TYJCQ|BO[3]~7     ; out              ;
+; |TYJCQ|BO[6]$latch ; |TYJCQ|BO[6]$latch ; out              ;
+; |TYJCQ|BO[6]~12    ; |TYJCQ|BO[6]~12    ; out              ;
+; |TYJCQ|BO[6]~13    ; |TYJCQ|BO[6]~13    ; out              ;
+; |TYJCQ|BO[7]$latch ; |TYJCQ|BO[7]$latch ; out              ;
+; |TYJCQ|BO[7]~14    ; |TYJCQ|BO[7]~14    ; out              ;
+; |TYJCQ|BO[7]~15    ; |TYJCQ|BO[7]~15    ; out0             ;
+; |TYJCQ|BO[7]~16    ; |TYJCQ|BO[7]~16    ; out              ;
+; |TYJCQ|BO[7]~17    ; |TYJCQ|BO[7]~17    ; out0             ;
+; |TYJCQ|BO[7]~18    ; |TYJCQ|BO[7]~18    ; out0             ;
+; |TYJCQ|AO[0]~0     ; |TYJCQ|AO[0]~0     ; out              ;
+; |TYJCQ|AO[0]~1     ; |TYJCQ|AO[0]~1     ; out              ;
+; |TYJCQ|AO[1]~2     ; |TYJCQ|AO[1]~2     ; out              ;
+; |TYJCQ|AO[1]~3     ; |TYJCQ|AO[1]~3     ; out              ;
+; |TYJCQ|AO[2]$latch ; |TYJCQ|AO[2]$latch ; out              ;
+; |TYJCQ|AO[2]~4     ; |TYJCQ|AO[2]~4     ; out              ;
+; |TYJCQ|AO[2]~5     ; |TYJCQ|AO[2]~5     ; out              ;
+; |TYJCQ|AO[3]$latch ; |TYJCQ|AO[3]$latch ; out              ;
+; |TYJCQ|AO[3]~6     ; |TYJCQ|AO[3]~6     ; out              ;
+; |TYJCQ|AO[3]~7     ; |TYJCQ|AO[3]~7     ; out              ;
+; |TYJCQ|AO[6]$latch ; |TYJCQ|AO[6]$latch ; out              ;
+; |TYJCQ|AO[6]~12    ; |TYJCQ|AO[6]~12    ; out              ;
+; |TYJCQ|AO[6]~13    ; |TYJCQ|AO[6]~13    ; out              ;
+; |TYJCQ|AO[7]$latch ; |TYJCQ|AO[7]$latch ; out              ;
+; |TYJCQ|AO[7]~14    ; |TYJCQ|AO[7]~14    ; out              ;
+; |TYJCQ|AO[7]~15    ; |TYJCQ|AO[7]~15    ; out0             ;
+; |TYJCQ|AO[7]~16    ; |TYJCQ|AO[7]~16    ; out              ;
+; |TYJCQ|AO[7]~17    ; |TYJCQ|AO[7]~17    ; out0             ;
+; |TYJCQ|AO[7]~18    ; |TYJCQ|AO[7]~18    ; out0             ;
+; |TYJCQ|WE          ; |TYJCQ|WE          ; out              ;
+; |TYJCQ|clk         ; |TYJCQ|clk         ; out              ;
+; |TYJCQ|RAA[0]      ; |TYJCQ|RAA[0]      ; out              ;
+; |TYJCQ|RAA[1]      ; |TYJCQ|RAA[1]      ; out              ;
+; |TYJCQ|RWBA[0]     ; |TYJCQ|RWBA[0]     ; out              ;
+; |TYJCQ|RWBA[1]     ; |TYJCQ|RWBA[1]     ; out              ;
+; |TYJCQ|i[0]        ; |TYJCQ|i[0]        ; out              ;
+; |TYJCQ|i[1]        ; |TYJCQ|i[1]        ; out              ;
+; |TYJCQ|i[2]        ; |TYJCQ|i[2]        ; out              ;
+; |TYJCQ|i[3]        ; |TYJCQ|i[3]        ; out              ;
+; |TYJCQ|i[4]        ; |TYJCQ|i[4]        ; out              ;
+; |TYJCQ|i[5]        ; |TYJCQ|i[5]        ; out              ;
+; |TYJCQ|i[6]        ; |TYJCQ|i[6]        ; out              ;
+; |TYJCQ|i[7]        ; |TYJCQ|i[7]        ; out              ;
+; |TYJCQ|AO[2]       ; |TYJCQ|AO[2]       ; pin_out          ;
+; |TYJCQ|AO[3]       ; |TYJCQ|AO[3]       ; pin_out          ;
+; |TYJCQ|AO[6]       ; |TYJCQ|AO[6]       ; pin_out          ;
+; |TYJCQ|AO[7]       ; |TYJCQ|AO[7]       ; pin_out          ;
+; |TYJCQ|BO[2]       ; |TYJCQ|BO[2]       ; pin_out          ;
+; |TYJCQ|BO[3]       ; |TYJCQ|BO[3]       ; pin_out          ;
+; |TYJCQ|BO[6]       ; |TYJCQ|BO[6]       ; pin_out          ;
+; |TYJCQ|BO[7]       ; |TYJCQ|BO[7]       ; pin_out          ;
+; |TYJCQ|Equal0~0    ; |TYJCQ|Equal0~0    ; out0             ;
+; |TYJCQ|Equal1~0    ; |TYJCQ|Equal1~0    ; out0             ;
+; |TYJCQ|Equal2~0    ; |TYJCQ|Equal2~0    ; out0             ;
+; |TYJCQ|Equal3~0    ; |TYJCQ|Equal3~0    ; out0             ;
+; |TYJCQ|Equal4~0    ; |TYJCQ|Equal4~0    ; out0             ;
+; |TYJCQ|Equal5~0    ; |TYJCQ|Equal5~0    ; out0             ;
++--------------------+--------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------+
+; Missing 1-Value Coverage                                   ;
++--------------------+--------------------+------------------+
+; Node Name          ; Output Port Name   ; Output Port Type ;
++--------------------+--------------------+------------------+
+; |TYJCQ|A~0         ; |TYJCQ|A~0         ; out              ;
+; |TYJCQ|A~1         ; |TYJCQ|A~1         ; out              ;
+; |TYJCQ|A~4         ; |TYJCQ|A~4         ; out              ;
+; |TYJCQ|A~5         ; |TYJCQ|A~5         ; out              ;
+; |TYJCQ|B~0         ; |TYJCQ|B~0         ; out              ;
+; |TYJCQ|B~8         ; |TYJCQ|B~8         ; out              ;
+; |TYJCQ|C~1         ; |TYJCQ|C~1         ; out              ;
+; |TYJCQ|C~4         ; |TYJCQ|C~4         ; out              ;
+; |TYJCQ|C~5         ; |TYJCQ|C~5         ; out              ;
+; |TYJCQ|C~9         ; |TYJCQ|C~9         ; out              ;
+; |TYJCQ|C~12        ; |TYJCQ|C~12        ; out              ;
+; |TYJCQ|C~13        ; |TYJCQ|C~13        ; out              ;
+; |TYJCQ|C~17        ; |TYJCQ|C~17        ; out              ;
+; |TYJCQ|C~20        ; |TYJCQ|C~20        ; out              ;
+; |TYJCQ|C~21        ; |TYJCQ|C~21        ; out              ;
+; |TYJCQ|BO[4]$latch ; |TYJCQ|BO[4]$latch ; out              ;
+; |TYJCQ|BO[4]~8     ; |TYJCQ|BO[4]~8     ; out              ;
+; |TYJCQ|BO[4]~9     ; |TYJCQ|BO[4]~9     ; out              ;
+; |TYJCQ|BO[5]$latch ; |TYJCQ|BO[5]$latch ; out              ;
+; |TYJCQ|BO[5]~10    ; |TYJCQ|BO[5]~10    ; out              ;
+; |TYJCQ|BO[5]~11    ; |TYJCQ|BO[5]~11    ; out              ;
+; |TYJCQ|AO[4]$latch ; |TYJCQ|AO[4]$latch ; out              ;
+; |TYJCQ|AO[4]~8     ; |TYJCQ|AO[4]~8     ; out              ;
+; |TYJCQ|AO[4]~9     ; |TYJCQ|AO[4]~9     ; out              ;
+; |TYJCQ|AO[5]$latch ; |TYJCQ|AO[5]$latch ; out              ;
+; |TYJCQ|AO[5]~10    ; |TYJCQ|AO[5]~10    ; out              ;
+; |TYJCQ|AO[5]~11    ; |TYJCQ|AO[5]~11    ; out              ;
+; |TYJCQ|C[2]        ; |TYJCQ|C[2]        ; regout           ;
+; |TYJCQ|C[3]        ; |TYJCQ|C[3]        ; regout           ;
+; |TYJCQ|C[4]        ; |TYJCQ|C[4]        ; regout           ;
+; |TYJCQ|C[5]        ; |TYJCQ|C[5]        ; regout           ;
+; |TYJCQ|C[6]        ; |TYJCQ|C[6]        ; regout           ;
+; |TYJCQ|B[4]        ; |TYJCQ|B[4]        ; regout           ;
+; |TYJCQ|B[5]        ; |TYJCQ|B[5]        ; regout           ;
+; |TYJCQ|B[7]        ; |TYJCQ|B[7]        ; regout           ;
+; |TYJCQ|A[2]        ; |TYJCQ|A[2]        ; regout           ;
+; |TYJCQ|A[4]        ; |TYJCQ|A[4]        ; regout           ;
+; |TYJCQ|A[5]        ; |TYJCQ|A[5]        ; regout           ;
+; |TYJCQ|A[6]        ; |TYJCQ|A[6]        ; regout           ;
+; |TYJCQ|A[7]        ; |TYJCQ|A[7]        ; regout           ;
+; |TYJCQ|AO[4]       ; |TYJCQ|AO[4]       ; pin_out          ;
+; |TYJCQ|AO[5]       ; |TYJCQ|AO[5]       ; pin_out          ;
+; |TYJCQ|BO[4]       ; |TYJCQ|BO[4]       ; pin_out          ;
+; |TYJCQ|BO[5]       ; |TYJCQ|BO[5]       ; pin_out          ;
++--------------------+--------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------+
+; Missing 0-Value Coverage                                   ;
++--------------------+--------------------+------------------+
+; Node Name          ; Output Port Name   ; Output Port Type ;
++--------------------+--------------------+------------------+
+; |TYJCQ|A~0         ; |TYJCQ|A~0         ; out              ;
+; |TYJCQ|A~1         ; |TYJCQ|A~1         ; out              ;
+; |TYJCQ|A~4         ; |TYJCQ|A~4         ; out              ;
+; |TYJCQ|A~5         ; |TYJCQ|A~5         ; out              ;
+; |TYJCQ|B~0         ; |TYJCQ|B~0         ; out              ;
+; |TYJCQ|B~1         ; |TYJCQ|B~1         ; out              ;
+; |TYJCQ|B~4         ; |TYJCQ|B~4         ; out              ;
+; |TYJCQ|B~5         ; |TYJCQ|B~5         ; out              ;
+; |TYJCQ|B~8         ; |TYJCQ|B~8         ; out              ;
+; |TYJCQ|B~9         ; |TYJCQ|B~9         ; out              ;
+; |TYJCQ|B~12        ; |TYJCQ|B~12        ; out              ;
+; |TYJCQ|B~13        ; |TYJCQ|B~13        ; out              ;
+; |TYJCQ|C~0         ; |TYJCQ|C~0         ; out              ;
+; |TYJCQ|C~1         ; |TYJCQ|C~1         ; out              ;
+; |TYJCQ|C~4         ; |TYJCQ|C~4         ; out              ;
+; |TYJCQ|C~5         ; |TYJCQ|C~5         ; out              ;
+; |TYJCQ|C~8         ; |TYJCQ|C~8         ; out              ;
+; |TYJCQ|C~9         ; |TYJCQ|C~9         ; out              ;
+; |TYJCQ|C~12        ; |TYJCQ|C~12        ; out              ;
+; |TYJCQ|C~13        ; |TYJCQ|C~13        ; out              ;
+; |TYJCQ|C~16        ; |TYJCQ|C~16        ; out              ;
+; |TYJCQ|C~17        ; |TYJCQ|C~17        ; out              ;
+; |TYJCQ|C~20        ; |TYJCQ|C~20        ; out              ;
+; |TYJCQ|C~21        ; |TYJCQ|C~21        ; out              ;
+; |TYJCQ|C[0]        ; |TYJCQ|C[0]        ; regout           ;
+; |TYJCQ|BO[1]$latch ; |TYJCQ|BO[1]$latch ; out              ;
+; |TYJCQ|BO[4]$latch ; |TYJCQ|BO[4]$latch ; out              ;
+; |TYJCQ|BO[4]~8     ; |TYJCQ|BO[4]~8     ; out              ;
+; |TYJCQ|BO[4]~9     ; |TYJCQ|BO[4]~9     ; out              ;
+; |TYJCQ|BO[5]$latch ; |TYJCQ|BO[5]$latch ; out              ;
+; |TYJCQ|BO[5]~10    ; |TYJCQ|BO[5]~10    ; out              ;
+; |TYJCQ|BO[5]~11    ; |TYJCQ|BO[5]~11    ; out              ;
+; |TYJCQ|AO[0]$latch ; |TYJCQ|AO[0]$latch ; out              ;
+; |TYJCQ|AO[1]$latch ; |TYJCQ|AO[1]$latch ; out              ;
+; |TYJCQ|AO[4]$latch ; |TYJCQ|AO[4]$latch ; out              ;
+; |TYJCQ|AO[4]~8     ; |TYJCQ|AO[4]~8     ; out              ;
+; |TYJCQ|AO[4]~9     ; |TYJCQ|AO[4]~9     ; out              ;
+; |TYJCQ|AO[5]$latch ; |TYJCQ|AO[5]$latch ; out              ;
+; |TYJCQ|AO[5]~10    ; |TYJCQ|AO[5]~10    ; out              ;
+; |TYJCQ|AO[5]~11    ; |TYJCQ|AO[5]~11    ; out              ;
+; |TYJCQ|C[1]        ; |TYJCQ|C[1]        ; regout           ;
+; |TYJCQ|C[2]        ; |TYJCQ|C[2]        ; regout           ;
+; |TYJCQ|C[3]        ; |TYJCQ|C[3]        ; regout           ;
+; |TYJCQ|C[4]        ; |TYJCQ|C[4]        ; regout           ;
+; |TYJCQ|C[5]        ; |TYJCQ|C[5]        ; regout           ;
+; |TYJCQ|C[6]        ; |TYJCQ|C[6]        ; regout           ;
+; |TYJCQ|C[7]        ; |TYJCQ|C[7]        ; regout           ;
+; |TYJCQ|B[0]        ; |TYJCQ|B[0]        ; regout           ;
+; |TYJCQ|B[1]        ; |TYJCQ|B[1]        ; regout           ;
+; |TYJCQ|B[2]        ; |TYJCQ|B[2]        ; regout           ;
+; |TYJCQ|B[3]        ; |TYJCQ|B[3]        ; regout           ;
+; |TYJCQ|B[4]        ; |TYJCQ|B[4]        ; regout           ;
+; |TYJCQ|B[5]        ; |TYJCQ|B[5]        ; regout           ;
+; |TYJCQ|B[6]        ; |TYJCQ|B[6]        ; regout           ;
+; |TYJCQ|B[7]        ; |TYJCQ|B[7]        ; regout           ;
+; |TYJCQ|A[0]        ; |TYJCQ|A[0]        ; regout           ;
+; |TYJCQ|A[1]        ; |TYJCQ|A[1]        ; regout           ;
+; |TYJCQ|A[2]        ; |TYJCQ|A[2]        ; regout           ;
+; |TYJCQ|A[3]        ; |TYJCQ|A[3]        ; regout           ;
+; |TYJCQ|A[4]        ; |TYJCQ|A[4]        ; regout           ;
+; |TYJCQ|A[5]        ; |TYJCQ|A[5]        ; regout           ;
+; |TYJCQ|A[6]        ; |TYJCQ|A[6]        ; regout           ;
+; |TYJCQ|A[7]        ; |TYJCQ|A[7]        ; regout           ;
+; |TYJCQ|BO[0]$latch ; |TYJCQ|BO[0]$latch ; out              ;
+; |TYJCQ|AO[0]       ; |TYJCQ|AO[0]       ; pin_out          ;
+; |TYJCQ|AO[1]       ; |TYJCQ|AO[1]       ; pin_out          ;
+; |TYJCQ|AO[4]       ; |TYJCQ|AO[4]       ; pin_out          ;
+; |TYJCQ|AO[5]       ; |TYJCQ|AO[5]       ; pin_out          ;
+; |TYJCQ|BO[0]       ; |TYJCQ|BO[0]       ; pin_out          ;
+; |TYJCQ|BO[1]       ; |TYJCQ|BO[1]       ; pin_out          ;
+; |TYJCQ|BO[4]       ; |TYJCQ|BO[4]       ; pin_out          ;
+; |TYJCQ|BO[5]       ; |TYJCQ|BO[5]       ; pin_out          ;
++--------------------+--------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Dec 09 16:32:20 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off TYJCQ -c TYJCQ
+Info: Using vector source file "E:/课程/数字电路与逻辑设计/Quartus/four/通用寄存器组/TYJCQ.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      55.56 %
+Info: Number of transitions in simulation is 14977
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 162 megabytes
+    Info: Processing ended: Mon Dec 09 16:32:21 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

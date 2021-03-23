@@ -1,0 +1,144 @@
+***** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******
+ Input File: nand_tj.sp
+ lic:
+ lic: FLEXlm: v10.9.8
+ lic: USER:   hmr                  HOSTNAME: BF-201911211153
+ lic: HOSTID: "70c94e3215e4 0c9d922ee649 00ffaabbccdd 005056c00001 005056c00008 70c94e31fa78 12c94e3
+ lic: Using FLEXlm license file:
+ lic: D:\synopsys\Hspice_G-2012.06-SP1\license.dat
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-dec-2019/2019.12
+ lic: NODE LOCKED license on hostid "70c94e3215e4 0c9d922ee649 00ffaabbccdd 005056c00001 005056c0000
+ lic:
+ init: begin read circuit files,  cpu clock=  1.43E-01
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\behave\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\behave\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\AD\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\XILINX\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\TLINE\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\TI\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\SIGNET\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\PCI\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\LIN_TECH\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\FET\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\DIO\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\COMLINE\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\BURR_BRN\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\BJT\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\behave\
+       option search = d:\synopsys\Hspice_G-2012.06-SP1\PARTS\AD\
+       option post =     2.00
+       option runlvl
+       option abstol =    1.000E-06
+       option reltol =    1.000E-06
+       option post
+       option ingold
+ init: end read circuit files,  cpu clock=  2.03E-01 peak memory=        35 mb
+ init: begin check errors,  cpu clock=  2.03E-01
+ init: end check errors,  cpu clock=  2.20E-01 peak memory=        36 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  2.20E-01
+       establish matrix -- done,  cpu clock=  2.28E-01 peak memory=        36 mb
+       re-order matrix -- done,  cpu clock=  2.31E-01 peak memory=        36 mb
+ init: end setup matrix,  cpu clock=  2.34E-01 peak memory=        36 mb
+ sweep: parameter       parameter1       begin, #sweeps =  24
+ parameter: width           =    4.00E-06
+ output: nand_tj.sw0
+ sweep: dc dc1    begin, #sweeps= 181 cpu clock=  2.49E-01
+ sweep: dc dc1    end,  cpu clock=  2.54E-01 peak memory=        36 mb
+ parameter: width           =    6.00E-06
+ output: nand_tj.sw0
+ sweep: dc dc2    begin, #sweeps= 181 cpu clock=  2.64E-01
+ sweep: dc dc2    end,  cpu clock=  2.69E-01 peak memory=        36 mb
+ parameter: width           =    8.00E-06
+ output: nand_tj.sw0
+ sweep: dc dc3    begin, #sweeps= 181 cpu clock=  2.84E-01
+ sweep: dc dc3    end,  cpu clock=  2.89E-01 peak memory=        36 mb
+ parameter: width           =    1.00E-05
+ output: nand_tj.sw0
+ sweep: dc dc4    begin, #sweeps= 181 cpu clock=  3.02E-01
+ sweep: dc dc4    end,  cpu clock=  3.08E-01 peak memory=        36 mb
+ parameter: width           =    1.20E-05
+ output: nand_tj.sw0
+ sweep: dc dc5    begin, #sweeps= 181 cpu clock=  3.17E-01
+ sweep: dc dc5    end,  cpu clock=  3.22E-01 peak memory=        36 mb
+ parameter: width           =    1.40E-05
+ output: nand_tj.sw0
+ sweep: dc dc6    begin, #sweeps= 181 cpu clock=  3.34E-01
+ sweep: dc dc6    end,  cpu clock=  3.40E-01 peak memory=        36 mb
+ parameter: width           =    1.60E-05
+ output: nand_tj.sw0
+ sweep: dc dc7    begin, #sweeps= 181 cpu clock=  3.50E-01
+ sweep: dc dc7    end,  cpu clock=  3.56E-01 peak memory=        36 mb
+ parameter: width           =    1.80E-05
+ output: nand_tj.sw0
+ sweep: dc dc8    begin, #sweeps= 181 cpu clock=  3.66E-01
+ sweep: dc dc8    end,  cpu clock=  3.70E-01 peak memory=        36 mb
+ parameter: width           =    2.00E-05
+ output: nand_tj.sw0
+ sweep: dc dc9    begin, #sweeps= 181 cpu clock=  3.81E-01
+ sweep: dc dc9    end,  cpu clock=  3.86E-01 peak memory=        36 mb
+ parameter: width           =    2.20E-05
+ output: nand_tj.sw0
+ sweep: dc dc10   begin, #sweeps= 181 cpu clock=  3.96E-01
+ sweep: dc dc10   end,  cpu clock=  4.01E-01 peak memory=        36 mb
+ parameter: width           =    2.40E-05
+ output: nand_tj.sw0
+ sweep: dc dc11   begin, #sweeps= 181 cpu clock=  4.12E-01
+ sweep: dc dc11   end,  cpu clock=  4.18E-01 peak memory=        36 mb
+ parameter: width           =    2.60E-05
+ output: nand_tj.sw0
+ sweep: dc dc12   begin, #sweeps= 181 cpu clock=  4.27E-01
+ sweep: dc dc12   end,  cpu clock=  4.33E-01 peak memory=        36 mb
+ parameter: width           =    2.80E-05
+ output: nand_tj.sw0
+ sweep: dc dc13   begin, #sweeps= 181 cpu clock=  4.45E-01
+ sweep: dc dc13   end,  cpu clock=  4.49E-01 peak memory=        36 mb
+ parameter: width           =    3.00E-05
+ output: nand_tj.sw0
+ sweep: dc dc14   begin, #sweeps= 181 cpu clock=  4.60E-01
+ sweep: dc dc14   end,  cpu clock=  4.65E-01 peak memory=        36 mb
+ parameter: width           =    3.20E-05
+ output: nand_tj.sw0
+ sweep: dc dc15   begin, #sweeps= 181 cpu clock=  4.77E-01
+ sweep: dc dc15   end,  cpu clock=  4.81E-01 peak memory=        36 mb
+ parameter: width           =    3.40E-05
+ output: nand_tj.sw0
+ sweep: dc dc16   begin, #sweeps= 181 cpu clock=  4.92E-01
+ sweep: dc dc16   end,  cpu clock=  4.98E-01 peak memory=        36 mb
+ parameter: width           =    3.60E-05
+ output: nand_tj.sw0
+ sweep: dc dc17   begin, #sweeps= 181 cpu clock=  5.07E-01
+ sweep: dc dc17   end,  cpu clock=  5.12E-01 peak memory=        36 mb
+ parameter: width           =    3.80E-05
+ output: nand_tj.sw0
+ sweep: dc dc18   begin, #sweeps= 181 cpu clock=  5.23E-01
+ sweep: dc dc18   end,  cpu clock=  5.29E-01 peak memory=        36 mb
+ parameter: width           =    4.00E-05
+ output: nand_tj.sw0
+ sweep: dc dc19   begin, #sweeps= 181 cpu clock=  5.41E-01
+ sweep: dc dc19   end,  cpu clock=  5.46E-01 peak memory=        36 mb
+ parameter: width           =    4.20E-05
+ output: nand_tj.sw0
+ sweep: dc dc20   begin, #sweeps= 181 cpu clock=  5.56E-01
+ sweep: dc dc20   end,  cpu clock=  5.61E-01 peak memory=        36 mb
+ parameter: width           =    4.40E-05
+ output: nand_tj.sw0
+ sweep: dc dc21   begin, #sweeps= 181 cpu clock=  5.71E-01
+ sweep: dc dc21   end,  cpu clock=  5.77E-01 peak memory=        36 mb
+ parameter: width           =    4.60E-05
+ output: nand_tj.sw0
+ sweep: dc dc22   begin, #sweeps= 181 cpu clock=  5.85E-01
+ sweep: dc dc22   end,  cpu clock=  5.91E-01 peak memory=        36 mb
+ parameter: width           =    4.80E-05
+ output: nand_tj.sw0
+ sweep: dc dc23   begin, #sweeps= 181 cpu clock=  6.01E-01
+ sweep: dc dc23   end,  cpu clock=  6.06E-01 peak memory=        36 mb
+ parameter: width           =    5.00E-05
+ output: nand_tj.sw0
+ sweep: dc dc24   begin, #sweeps= 181 cpu clock=  6.17E-01
+ sweep: dc dc24   end,  cpu clock=  6.22E-01 peak memory=        36 mb
+ sweep: parameter       parameter       1 end
+ dcop: begin dcop,  cpu clock=  6.31E-01
+ dcop: end dcop,  cpu clock=  6.35E-01 peak memory=        36 mb                tot_iter=       3
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

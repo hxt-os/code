@@ -1,0 +1,19 @@
+* "simulator" "HSPICE" 
+* "version" "G-2012.06-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "16:00:20 12/20/2018 "
+* "netlist" "xor4-2-9.sp "
+* "runtitle" ".temp 25.0000"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc= 1.000e-12       
+.nodeset
++ 1 =   1.8000        
++ a =   0.            
++ af =   0.            
++ b =   0.            
++ bf =   0.            
++ vo =   0.4522        
+***   END: Saved Operating Point ***                     

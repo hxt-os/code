@@ -1,0 +1,233 @@
+Simulator report for decoder_n_m
+Wed Oct 30 20:54:32 2019
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 70 nodes     ;
+; Simulation Coverage         ;      90.74 % ;
+; Total Number of Transitions ; 11448        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone      ;
+; Device                      ; EP1C3T144C8  ;
++-----------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                           ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
+; Option                                                                                     ; Setting         ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
+; Simulation mode                                                                            ; Timing          ; Timing        ;
+; Start time                                                                                 ; 0 ns            ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF            ;               ;
+; Vector input source                                                                        ; decoder_n_m.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On              ; On            ;
+; Check outputs                                                                              ; Off             ; Off           ;
+; Report simulation coverage                                                                 ; On              ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On              ; On            ;
+; Display missing 1-value coverage report                                                    ; On              ; On            ;
+; Display missing 0-value coverage report                                                    ; On              ; On            ;
+; Detect setup and hold time violations                                                      ; Off             ; Off           ;
+; Detect glitches                                                                            ; Off             ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off             ; Off           ;
+; Generate Signal Activity File                                                              ; Off             ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off             ; Off           ;
+; Group bus channels in simulation results                                                   ; Off             ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On              ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE      ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off             ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off             ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto            ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      90.74 % ;
+; Total nodes checked                                 ; 70           ;
+; Total output ports checked                          ; 54           ;
+; Total output ports with complete 1/0-value coverage ; 49           ;
+; Total output ports with no 1/0-value coverage       ; 1            ;
+; Total output ports with no 1-value coverage         ; 5            ;
+; Total output ports with no 0-value coverage         ; 1            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                   ;
++----------------------------+-------------------------------+------------------+
+; Node Name                  ; Output Port Name              ; Output Port Type ;
++----------------------------+-------------------------------+------------------+
+; |decoder_n_m|Equal16~0     ; |decoder_n_m|Equal16~0        ; combout          ;
+; |decoder_n_m|Equal16~1     ; |decoder_n_m|Equal16~1        ; combout          ;
+; |decoder_n_m|Equal16~2     ; |decoder_n_m|Equal16~2        ; combout          ;
+; |decoder_n_m|Equal16~3     ; |decoder_n_m|Equal16~3        ; combout          ;
+; |decoder_n_m|Equal16~4     ; |decoder_n_m|Equal16~4        ; combout          ;
+; |decoder_n_m|Equal16~5     ; |decoder_n_m|Equal16~5        ; combout          ;
+; |decoder_n_m|process_0~12  ; |decoder_n_m|process_0~12     ; combout          ;
+; |decoder_n_m|Equal16~6     ; |decoder_n_m|Equal16~6        ; combout          ;
+; |decoder_n_m|ORDER[14]~143 ; |decoder_n_m|ORDER[14]~143    ; combout          ;
+; |decoder_n_m|process_0~13  ; |decoder_n_m|process_0~13     ; combout          ;
+; |decoder_n_m|Equal16~7     ; |decoder_n_m|Equal16~7        ; combout          ;
+; |decoder_n_m|process_0~14  ; |decoder_n_m|process_0~14     ; combout          ;
+; |decoder_n_m|ORDER[14]~144 ; |decoder_n_m|ORDER[14]~144    ; combout          ;
+; |decoder_n_m|Equal16~8     ; |decoder_n_m|Equal16~8        ; combout          ;
+; |decoder_n_m|process_0~15  ; |decoder_n_m|process_0~15     ; combout          ;
+; |decoder_n_m|Equal16~9     ; |decoder_n_m|Equal16~9        ; combout          ;
+; |decoder_n_m|process_0~16  ; |decoder_n_m|process_0~16     ; combout          ;
+; |decoder_n_m|process_0~3   ; |decoder_n_m|process_0~3      ; combout          ;
+; |decoder_n_m|ORDER[15]~145 ; |decoder_n_m|ORDER[15]~145    ; combout          ;
+; |decoder_n_m|Equal12~0     ; |decoder_n_m|Equal12~0        ; combout          ;
+; |decoder_n_m|Equal1~0      ; |decoder_n_m|Equal1~0         ; combout          ;
+; |decoder_n_m|Equal16~10    ; |decoder_n_m|Equal16~10       ; combout          ;
+; |decoder_n_m|ORDER[15]~129 ; |decoder_n_m|ORDER[15]~129    ; combout          ;
+; |decoder_n_m|ORDER[13]~146 ; |decoder_n_m|ORDER[13]~146    ; combout          ;
+; |decoder_n_m|process_0~17  ; |decoder_n_m|process_0~17     ; combout          ;
+; |decoder_n_m|process_0~18  ; |decoder_n_m|process_0~18     ; combout          ;
+; |decoder_n_m|ORDER[15]~147 ; |decoder_n_m|ORDER[15]~147    ; combout          ;
+; |decoder_n_m|ORDER[14]~148 ; |decoder_n_m|ORDER[14]~148    ; combout          ;
+; |decoder_n_m|ORDER[13]~149 ; |decoder_n_m|ORDER[13]~149    ; combout          ;
+; |decoder_n_m|MOV0          ; |decoder_n_m|MOV0             ; padio            ;
+; |decoder_n_m|MOV1          ; |decoder_n_m|MOV1             ; padio            ;
+; |decoder_n_m|MOV2          ; |decoder_n_m|MOV2             ; padio            ;
+; |decoder_n_m|ADD           ; |decoder_n_m|ADD              ; padio            ;
+; |decoder_n_m|SUB           ; |decoder_n_m|SUB              ; padio            ;
+; |decoder_n_m|AND0          ; |decoder_n_m|AND0             ; padio            ;
+; |decoder_n_m|NOT0          ; |decoder_n_m|NOT0             ; padio            ;
+; |decoder_n_m|SHR           ; |decoder_n_m|SHR              ; padio            ;
+; |decoder_n_m|SHL           ; |decoder_n_m|SHL              ; padio            ;
+; |decoder_n_m|IN0           ; |decoder_n_m|IN0              ; padio            ;
+; |decoder_n_m|OUT0          ; |decoder_n_m|OUT0             ; padio            ;
+; |decoder_n_m|NOP           ; |decoder_n_m|NOP              ; padio            ;
+; |decoder_n_m|INPUT0[7]     ; |decoder_n_m|INPUT0[7]~corein ; combout          ;
+; |decoder_n_m|INPUT0[6]     ; |decoder_n_m|INPUT0[6]~corein ; combout          ;
+; |decoder_n_m|INPUT0[5]     ; |decoder_n_m|INPUT0[5]~corein ; combout          ;
+; |decoder_n_m|INPUT0[4]     ; |decoder_n_m|INPUT0[4]~corein ; combout          ;
+; |decoder_n_m|INPUT2[1]     ; |decoder_n_m|INPUT2[1]~corein ; combout          ;
+; |decoder_n_m|INPUT2[0]     ; |decoder_n_m|INPUT2[0]~corein ; combout          ;
+; |decoder_n_m|INPUT1[3]     ; |decoder_n_m|INPUT1[3]~corein ; combout          ;
+; |decoder_n_m|INPUT1[2]     ; |decoder_n_m|INPUT1[2]~corein ; combout          ;
++----------------------------+-------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++---------------------------------------------------------------+
+; Missing 1-Value Coverage                                      ;
++-------------------+------------------------+------------------+
+; Node Name         ; Output Port Name       ; Output Port Type ;
++-------------------+------------------------+------------------+
+; |decoder_n_m|JMP  ; |decoder_n_m|JMP       ; padio            ;
+; |decoder_n_m|JZ   ; |decoder_n_m|JZ        ; padio            ;
+; |decoder_n_m|JC   ; |decoder_n_m|JC        ; padio            ;
+; |decoder_n_m|HALT ; |decoder_n_m|HALT      ; padio            ;
+; |decoder_n_m|EN   ; |decoder_n_m|EN~corein ; combout          ;
++-------------------+------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------------------+
+; Missing 0-Value Coverage                                    ;
++-----------------+------------------------+------------------+
+; Node Name       ; Output Port Name       ; Output Port Type ;
++-----------------+------------------------+------------------+
+; |decoder_n_m|EN ; |decoder_n_m|EN~corein ; combout          ;
++-----------------+------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Oct 30 20:54:30 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off decoder_n_m -c decoder_n_m
+Info: Using vector source file "D:/Quartus/decoder0/decoder_n_m.vwf"
+Warning: Wrong node type for node "ORDER[15]" in vector source file. Design node is of type Buried, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "ORDER[14]" in vector source file. Design node is of type Buried, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "ORDER[13]" in vector source file. Design node is of type Buried, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "ORDER[12]" in vector source file. Design node is of type Buried, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "ORDER[11]" in vector source file. Design node is of type Buried, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "ORDER[10]" in vector source file. Design node is of type Buried, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "ORDER[9]" in vector source file. Design node is of type Buried, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "ORDER[8]" in vector source file. Design node is of type Buried, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "ORDER[7]" in vector source file. Design node is of type Buried, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "ORDER[6]" in vector source file. Design node is of type Buried, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "ORDER[5]" in vector source file. Design node is of type Buried, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "ORDER[4]" in vector source file. Design node is of type Buried, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "ORDER[3]" in vector source file. Design node is of type Buried, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "ORDER[2]" in vector source file. Design node is of type Buried, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "ORDER[1]" in vector source file. Design node is of type Buried, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "ORDER[0]" in vector source file. Design node is of type Buried, but signal in vector source file is of type Output.
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      90.74 %
+Info: Number of transitions in simulation is 11448
+Info: Quartus II Simulator was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 166 megabytes
+    Info: Processing ended: Wed Oct 30 20:54:32 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

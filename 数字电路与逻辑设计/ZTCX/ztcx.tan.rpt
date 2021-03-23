@@ -1,0 +1,178 @@
+Classic Timing Analyzer report for ztcx
+Wed Nov 13 20:23:28 2019
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Parallel Compilation
+  5. tpd
+  6. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                        ;
++------------------------------+-------+---------------+-------------+------+-------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From ; To          ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+------+-------------+------------+----------+--------------+
+; Worst-case tpd               ; N/A   ; None          ; 13.890 ns   ; MOV1 ; XZQ_MADD[1] ; --         ; --       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;      ;             ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+------+-------------+------------+----------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                           ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                              ; Setting            ; From ; To ; Entity Name ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                         ; EP1C3T144C8        ;      ;    ;             ;
+; Timing Models                                                       ; Final              ;      ;    ;             ;
+; Default hold multicycle                                             ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                           ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                              ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                      ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                    ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                               ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                             ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                    ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                       ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                   ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                   ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node               ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                               ; 10                 ;      ;    ;             ;
+; Number of paths to report                                           ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                        ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                              ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                          ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                        ; Off                ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis      ; Off                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                          ; Near End           ;      ;    ;             ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------+
+; tpd                                                               ;
++-------+-------------------+-----------------+-------+-------------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From  ; To          ;
++-------+-------------------+-----------------+-------+-------------+
+; N/A   ; None              ; 13.890 ns       ; MOV1  ; XZQ_MADD[1] ;
+; N/A   ; None              ; 13.677 ns       ; ADD   ; TYJCQ_WE    ;
+; N/A   ; None              ; 13.648 ns       ; MOV1  ; YWJCQ_FBUS  ;
+; N/A   ; None              ; 13.560 ns       ; SM    ; XZQ_MADD[0] ;
+; N/A   ; None              ; 13.556 ns       ; ADD   ; YWJCQ_FBUS  ;
+; N/A   ; None              ; 13.378 ns       ; ADD   ; ZF_EN       ;
+; N/A   ; None              ; 13.378 ns       ; SUB   ; TYJCQ_WE    ;
+; N/A   ; None              ; 13.336 ns       ; SM    ; RAM_DL      ;
+; N/A   ; None              ; 13.257 ns       ; SUB   ; YWJCQ_FBUS  ;
+; N/A   ; None              ; 13.223 ns       ; Z     ; RAM_DL      ;
+; N/A   ; None              ; 13.182 ns       ; JC    ; RAM_DL      ;
+; N/A   ; None              ; 13.119 ns       ; Z     ; PCJCQ_LD    ;
+; N/A   ; None              ; 13.086 ns       ; NOT0  ; YWJCQ_FBUS  ;
+; N/A   ; None              ; 13.079 ns       ; SUB   ; ZF_EN       ;
+; N/A   ; None              ; 13.079 ns       ; C     ; PCJCQ_LD    ;
+; N/A   ; None              ; 12.931 ns       ; SM    ; XZQ_MADD[1] ;
+; N/A   ; None              ; 12.824 ns       ; C     ; PCJCQ_INC   ;
+; N/A   ; None              ; 12.783 ns       ; JC    ; PCJCQ_LD    ;
+; N/A   ; None              ; 12.735 ns       ; SM    ; PCJCQ_INC   ;
+; N/A   ; None              ; 12.400 ns       ; JZ    ; RAM_DL      ;
+; N/A   ; None              ; 12.346 ns       ; MOV2  ; XZQ_MADD[0] ;
+; N/A   ; None              ; 12.344 ns       ; MOV0  ; YWJCQ_FBUS  ;
+; N/A   ; None              ; 12.330 ns       ; SHL   ; TYJCQ_WE    ;
+; N/A   ; None              ; 12.320 ns       ; ADD   ; CF_EN       ;
+; N/A   ; None              ; 12.300 ns       ; Z     ; PCJCQ_INC   ;
+; N/A   ; None              ; 12.291 ns       ; JZ    ; PCJCQ_LD    ;
+; N/A   ; None              ; 12.260 ns       ; JC    ; PCJCQ_INC   ;
+; N/A   ; None              ; 12.178 ns       ; JMP   ; PCJCQ_LD    ;
+; N/A   ; None              ; 12.154 ns       ; MOV2  ; TYJCQ_WE    ;
+; N/A   ; None              ; 12.132 ns       ; AND0  ; TYJCQ_WE    ;
+; N/A   ; None              ; 12.119 ns       ; MOV2  ; RAM_DL      ;
+; N/A   ; None              ; 12.032 ns       ; MOV2  ; XZQ_MADD[1] ;
+; N/A   ; None              ; 12.021 ns       ; IR[7] ; ALU_M       ;
+; N/A   ; None              ; 12.020 ns       ; SUB   ; CF_EN       ;
+; N/A   ; None              ; 12.011 ns       ; AND0  ; YWJCQ_FBUS  ;
+; N/A   ; None              ; 12.000 ns       ; NOT0  ; TYJCQ_WE    ;
+; N/A   ; None              ; 11.894 ns       ; MOV0  ; TYJCQ_WE    ;
+; N/A   ; None              ; 11.862 ns       ; IR[6] ; ALU_M       ;
+; N/A   ; None              ; 11.833 ns       ; AND0  ; ZF_EN       ;
+; N/A   ; None              ; 11.722 ns       ; JMP   ; RAM_DL      ;
+; N/A   ; None              ; 11.590 ns       ; NOP   ; PCJCQ_INC   ;
+; N/A   ; None              ; 11.478 ns       ; JZ    ; PCJCQ_INC   ;
+; N/A   ; None              ; 11.140 ns       ; SHR   ; TYJCQ_WE    ;
+; N/A   ; None              ; 11.088 ns       ; SHR   ; CF_EN       ;
+; N/A   ; None              ; 10.777 ns       ; AND0  ; CF_EN       ;
+; N/A   ; None              ; 10.389 ns       ; IR[5] ; ALU_M       ;
+; N/A   ; None              ; 9.892 ns        ; SM    ; ZCQ_LD      ;
+; N/A   ; None              ; 9.887 ns        ; IR[4] ; ALU_M       ;
+; N/A   ; None              ; 9.499 ns        ; IR[7] ; ALU_S[3]    ;
+; N/A   ; None              ; 9.456 ns        ; MOV1  ; RAM_XL      ;
+; N/A   ; None              ; 9.429 ns        ; IR[3] ; TYJCQ_WA[1] ;
+; N/A   ; None              ; 9.426 ns        ; IR[0] ; TYJCQ_RA[0] ;
+; N/A   ; None              ; 9.400 ns        ; SHR   ; YWJCQ_FR    ;
+; N/A   ; None              ; 9.387 ns        ; IR[6] ; ALU_S[2]    ;
+; N/A   ; None              ; 9.380 ns        ; HALT  ; SM_EN       ;
+; N/A   ; None              ; 9.378 ns        ; IR[2] ; TYJCQ_WA[0] ;
+; N/A   ; None              ; 9.378 ns        ; IR[1] ; TYJCQ_RA[1] ;
+; N/A   ; None              ; 9.012 ns        ; SHL   ; YWJCQ_FL    ;
+; N/A   ; None              ; 9.007 ns        ; IR[4] ; ALU_S[0]    ;
+; N/A   ; None              ; 8.801 ns        ; IR[5] ; ALU_S[1]    ;
++-------+-------------------+-----------------+-------+-------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Nov 13 20:23:27 2019
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off ztcx -c ztcx --timing_analysis_only
+Info: Longest tpd from source pin "MOV1" to destination pin "XZQ_MADD[1]" is 13.890 ns
+    Info: 1: + IC(0.000 ns) + CELL(1.469 ns) = 1.469 ns; Loc. = PIN_76; Fanout = 3; PIN Node = 'MOV1'
+    Info: 2: + IC(7.705 ns) + CELL(0.590 ns) = 9.764 ns; Loc. = LC_X17_Y12_N3; Fanout = 1; COMB Node = 'XZQ_MADD~3'
+    Info: 3: + IC(2.002 ns) + CELL(2.124 ns) = 13.890 ns; Loc. = PIN_105; Fanout = 0; PIN Node = 'XZQ_MADD[1]'
+    Info: Total cell delay = 4.183 ns ( 30.12 % )
+    Info: Total interconnect delay = 9.707 ns ( 69.88 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 194 megabytes
+    Info: Processing ended: Wed Nov 13 20:23:28 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,530 @@
+Simulator report for ALU
+Wed Dec 11 20:18:53 2019
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 240 nodes    ;
+; Simulation Coverage         ;      54.33 % ;
+; Total Number of Transitions ; 75179        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone      ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; ALU.vwf    ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      54.33 % ;
+; Total nodes checked                                 ; 240          ;
+; Total output ports checked                          ; 254          ;
+; Total output ports with complete 1/0-value coverage ; 138          ;
+; Total output ports with no 1/0-value coverage       ; 114          ;
+; Total output ports with no 1-value coverage         ; 116          ;
+; Total output ports with no 0-value coverage         ; 114          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                 ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+; Node Name                                                                ; Output Port Name                                                              ; Output Port Type ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+; |ALU|T0[0]~0                                                             ; |ALU|T0[0]~0                                                                  ; out              ;
+; |ALU|T0[0]~1                                                             ; |ALU|T0[0]~1                                                                  ; out              ;
+; |ALU|T0[0]~2                                                             ; |ALU|T0[0]~2                                                                  ; out              ;
+; |ALU|T0[0]                                                               ; |ALU|T0[0]                                                                    ; out              ;
+; |ALU|CF~0                                                                ; |ALU|CF~0                                                                     ; out0             ;
+; |ALU|T0~28                                                               ; |ALU|T0~28                                                                    ; out0             ;
+; |ALU|T0~29                                                               ; |ALU|T0~29                                                                    ; out0             ;
+; |ALU|CF~1                                                                ; |ALU|CF~1                                                                     ; out0             ;
+; |ALU|CF$latch                                                            ; |ALU|CF$latch                                                                 ; out              ;
+; |ALU|comb~0                                                              ; |ALU|comb~0                                                                   ; out0             ;
+; |ALU|comb~1                                                              ; |ALU|comb~1                                                                   ; out0             ;
+; |ALU|T0[1]                                                               ; |ALU|T0[1]                                                                    ; out              ;
+; |ALU|T0[1]~3                                                             ; |ALU|T0[1]~3                                                                  ; out              ;
+; |ALU|T0[1]~4                                                             ; |ALU|T0[1]~4                                                                  ; out              ;
+; |ALU|T0[1]~5                                                             ; |ALU|T0[1]~5                                                                  ; out              ;
+; |ALU|T0[2]                                                               ; |ALU|T0[2]                                                                    ; out              ;
+; |ALU|T0[2]~6                                                             ; |ALU|T0[2]~6                                                                  ; out              ;
+; |ALU|T0[2]~7                                                             ; |ALU|T0[2]~7                                                                  ; out              ;
+; |ALU|T0[2]~8                                                             ; |ALU|T0[2]~8                                                                  ; out              ;
+; |ALU|T0[3]                                                               ; |ALU|T0[3]                                                                    ; out              ;
+; |ALU|T0[3]~9                                                             ; |ALU|T0[3]~9                                                                  ; out              ;
+; |ALU|T0[3]~10                                                            ; |ALU|T0[3]~10                                                                 ; out              ;
+; |ALU|T0[3]~11                                                            ; |ALU|T0[3]~11                                                                 ; out              ;
+; |ALU|T0[4]                                                               ; |ALU|T0[4]                                                                    ; out              ;
+; |ALU|T0[4]~12                                                            ; |ALU|T0[4]~12                                                                 ; out              ;
+; |ALU|T0[4]~13                                                            ; |ALU|T0[4]~13                                                                 ; out              ;
+; |ALU|T0[4]~14                                                            ; |ALU|T0[4]~14                                                                 ; out              ;
+; |ALU|T0[5]                                                               ; |ALU|T0[5]                                                                    ; out              ;
+; |ALU|T0[5]~15                                                            ; |ALU|T0[5]~15                                                                 ; out              ;
+; |ALU|T0[5]~16                                                            ; |ALU|T0[5]~16                                                                 ; out              ;
+; |ALU|T0[5]~17                                                            ; |ALU|T0[5]~17                                                                 ; out              ;
+; |ALU|T0[6]                                                               ; |ALU|T0[6]                                                                    ; out              ;
+; |ALU|T0[6]~18                                                            ; |ALU|T0[6]~18                                                                 ; out              ;
+; |ALU|T0[6]~19                                                            ; |ALU|T0[6]~19                                                                 ; out              ;
+; |ALU|T0[6]~20                                                            ; |ALU|T0[6]~20                                                                 ; out              ;
+; |ALU|T0[7]                                                               ; |ALU|T0[7]                                                                    ; out              ;
+; |ALU|T0[7]~21                                                            ; |ALU|T0[7]~21                                                                 ; out              ;
+; |ALU|T0[7]~22                                                            ; |ALU|T0[7]~22                                                                 ; out0             ;
+; |ALU|T0[7]~23                                                            ; |ALU|T0[7]~23                                                                 ; out              ;
+; |ALU|T0[7]~24                                                            ; |ALU|T0[7]~24                                                                 ; out0             ;
+; |ALU|T0[7]~25                                                            ; |ALU|T0[7]~25                                                                 ; out              ;
+; |ALU|T0[7]~26                                                            ; |ALU|T0[7]~26                                                                 ; out0             ;
+; |ALU|M                                                                   ; |ALU|M                                                                        ; out              ;
+; |ALU|S[0]                                                                ; |ALU|S[0]                                                                     ; out              ;
+; |ALU|S[1]                                                                ; |ALU|S[1]                                                                     ; out              ;
+; |ALU|S[2]                                                                ; |ALU|S[2]                                                                     ; out              ;
+; |ALU|S[3]                                                                ; |ALU|S[3]                                                                     ; out              ;
+; |ALU|x[0]                                                                ; |ALU|x[0]                                                                     ; out              ;
+; |ALU|x[1]                                                                ; |ALU|x[1]                                                                     ; out              ;
+; |ALU|x[2]                                                                ; |ALU|x[2]                                                                     ; out              ;
+; |ALU|y[0]                                                                ; |ALU|y[0]                                                                     ; out              ;
+; |ALU|y[1]                                                                ; |ALU|y[1]                                                                     ; out              ;
+; |ALU|y[2]                                                                ; |ALU|y[2]                                                                     ; out              ;
+; |ALU|T[0]                                                                ; |ALU|T[0]                                                                     ; pin_out          ;
+; |ALU|T[1]                                                                ; |ALU|T[1]                                                                     ; pin_out          ;
+; |ALU|T[2]                                                                ; |ALU|T[2]                                                                     ; pin_out          ;
+; |ALU|T[3]                                                                ; |ALU|T[3]                                                                     ; pin_out          ;
+; |ALU|T[4]                                                                ; |ALU|T[4]                                                                     ; pin_out          ;
+; |ALU|T[5]                                                                ; |ALU|T[5]                                                                     ; pin_out          ;
+; |ALU|T[6]                                                                ; |ALU|T[6]                                                                     ; pin_out          ;
+; |ALU|T[7]                                                                ; |ALU|T[7]                                                                     ; pin_out          ;
+; |ALU|CF                                                                  ; |ALU|CF                                                                       ; pin_out          ;
+; |ALU|Equal0~0                                                            ; |ALU|Equal0~0                                                                 ; out0             ;
+; |ALU|Equal1~0                                                            ; |ALU|Equal1~0                                                                 ; out0             ;
+; |ALU|Equal2~0                                                            ; |ALU|Equal2~0                                                                 ; out0             ;
+; |ALU|Equal3~0                                                            ; |ALU|Equal3~0                                                                 ; out0             ;
+; |ALU|lpm_add_sub:Add1|result_node[1]                                     ; |ALU|lpm_add_sub:Add1|result_node[1]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add1|result_node[2]                                     ; |ALU|lpm_add_sub:Add1|result_node[2]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add1|result_node[3]                                     ; |ALU|lpm_add_sub:Add1|result_node[3]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add1|result_node[4]                                     ; |ALU|lpm_add_sub:Add1|result_node[4]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[3]                             ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[2]                             ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[1]                             ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~6                  ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~6                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~7                  ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~7                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~8                  ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~8                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]                    ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]                         ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                    ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                    ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                         ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                    ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                         ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~9                                  ; |ALU|lpm_add_sub:Add1|addcore:adder|_~9                                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~10                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~10                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~11                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~11                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~17                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~17                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~18                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~18                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~19                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~19                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~24                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~24                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~25                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~25                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~26                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~26                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~27                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~27                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~33                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~33                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~34                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~34                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~35                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~35                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]      ; sout             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]~COUT ; cout             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; sout             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]      ; sout             ;
+; |ALU|lpm_add_sub:Add0|result_node[0]                                     ; |ALU|lpm_add_sub:Add0|result_node[0]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add0|result_node[1]                                     ; |ALU|lpm_add_sub:Add0|result_node[1]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add0|result_node[2]                                     ; |ALU|lpm_add_sub:Add0|result_node[2]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add0|result_node[3]                                     ; |ALU|lpm_add_sub:Add0|result_node[3]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add0|result_node[4]                                     ; |ALU|lpm_add_sub:Add0|result_node[4]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[0]                             ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                  ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                    ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~0                                  ; |ALU|lpm_add_sub:Add0|addcore:adder|_~0                                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~1                                  ; |ALU|lpm_add_sub:Add0|addcore:adder|_~1                                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~3                                  ; |ALU|lpm_add_sub:Add0|addcore:adder|_~3                                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[2]                             ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[1]                             ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~6                  ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~6                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~7                  ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~7                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                    ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                         ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                    ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                    ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                         ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                    ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                         ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~9                                  ; |ALU|lpm_add_sub:Add0|addcore:adder|_~9                                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~10                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~10                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~16                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~16                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~17                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~17                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~22                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~22                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~23                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~23                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~24                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~24                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~29                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~29                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~30                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~30                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~31                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~31                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]      ; sout             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]~COUT ; cout             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; sout             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]      ; sout             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]      ; sout             ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                    ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+; Node Name                                                                ; Output Port Name                                                              ; Output Port Type ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+; |ALU|T0~27                                                               ; |ALU|T0~27                                                                    ; out0             ;
+; |ALU|T0~30                                                               ; |ALU|T0~30                                                                    ; out0             ;
+; |ALU|T0~31                                                               ; |ALU|T0~31                                                                    ; out0             ;
+; |ALU|T0~32                                                               ; |ALU|T0~32                                                                    ; out0             ;
+; |ALU|T0~33                                                               ; |ALU|T0~33                                                                    ; out0             ;
+; |ALU|T0~34                                                               ; |ALU|T0~34                                                                    ; out0             ;
+; |ALU|x[3]                                                                ; |ALU|x[3]                                                                     ; out              ;
+; |ALU|x[4]                                                                ; |ALU|x[4]                                                                     ; out              ;
+; |ALU|x[5]                                                                ; |ALU|x[5]                                                                     ; out              ;
+; |ALU|x[6]                                                                ; |ALU|x[6]                                                                     ; out              ;
+; |ALU|x[7]                                                                ; |ALU|x[7]                                                                     ; out              ;
+; |ALU|y[3]                                                                ; |ALU|y[3]                                                                     ; out              ;
+; |ALU|y[4]                                                                ; |ALU|y[4]                                                                     ; out              ;
+; |ALU|y[5]                                                                ; |ALU|y[5]                                                                     ; out              ;
+; |ALU|y[6]                                                                ; |ALU|y[6]                                                                     ; out              ;
+; |ALU|y[7]                                                                ; |ALU|y[7]                                                                     ; out              ;
+; |ALU|ZF                                                                  ; |ALU|ZF                                                                       ; pin_out          ;
+; |ALU|Equal4~0                                                            ; |ALU|Equal4~0                                                                 ; out0             ;
+; |ALU|lpm_add_sub:Add1|result_node[5]                                     ; |ALU|lpm_add_sub:Add1|result_node[5]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add1|result_node[6]                                     ; |ALU|lpm_add_sub:Add1|result_node[6]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add1|result_node[7]                                     ; |ALU|lpm_add_sub:Add1|result_node[7]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add1|result_node[8]                                     ; |ALU|lpm_add_sub:Add1|result_node[8]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[0]                             ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~0                                  ; |ALU|lpm_add_sub:Add1|addcore:adder|_~0                                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~1                                  ; |ALU|lpm_add_sub:Add1|addcore:adder|_~1                                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~2                                  ; |ALU|lpm_add_sub:Add1|addcore:adder|_~2                                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~3                                  ; |ALU|lpm_add_sub:Add1|addcore:adder|_~3                                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[8]~1                      ; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[8]~1                           ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[8]                        ; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[8]                             ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[7]                        ; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[7]                             ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[6]                        ; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[6]                             ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[5]                        ; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[5]                             ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[4]                        ; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[4]                             ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[8]~1                  ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[8]~1                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[7]~2                  ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[7]~2                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[6]~3                  ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[6]~3                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]~4                  ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]~4                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]~5                  ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]~5                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[8]                    ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[8]                         ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[7]                    ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[7]                         ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[6]                    ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[6]                         ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]                    ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]                         ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~4                                  ; |ALU|lpm_add_sub:Add1|addcore:adder|_~4                                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~5                                  ; |ALU|lpm_add_sub:Add1|addcore:adder|_~5                                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~6                                  ; |ALU|lpm_add_sub:Add1|addcore:adder|_~6                                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~7                                  ; |ALU|lpm_add_sub:Add1|addcore:adder|_~7                                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~8                                  ; |ALU|lpm_add_sub:Add1|addcore:adder|_~8                                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~12                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~12                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~13                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~13                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~14                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~14                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~15                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~15                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~16                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~16                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~20                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~20                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~21                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~21                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~22                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~22                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~23                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~23                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~28                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~28                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~29                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~29                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~30                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~30                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~31                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~31                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~32                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~32                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[8] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[8]      ; sout             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]~COUT ; cout             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]      ; sout             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]~COUT ; cout             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]      ; sout             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]~COUT ; cout             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]      ; sout             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]~COUT ; cout             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |ALU|lpm_add_sub:Add0|result_node[5]                                     ; |ALU|lpm_add_sub:Add0|result_node[5]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add0|result_node[6]                                     ; |ALU|lpm_add_sub:Add0|result_node[6]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add0|result_node[7]                                     ; |ALU|lpm_add_sub:Add0|result_node[7]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~2                                  ; |ALU|lpm_add_sub:Add0|addcore:adder|_~2                                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[7]~1                      ; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[7]~1                           ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[7]                        ; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[7]                             ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[6]                        ; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[6]                             ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[5]                        ; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[5]                             ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[4]                        ; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[4]                             ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[3]                             ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]~1                  ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]~1                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]~2                  ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]~2                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]~3                  ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]~3                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~4                  ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~4                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~5                  ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~5                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]                    ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]                         ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]                    ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]                         ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]                    ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]                         ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~4                                  ; |ALU|lpm_add_sub:Add0|addcore:adder|_~4                                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~5                                  ; |ALU|lpm_add_sub:Add0|addcore:adder|_~5                                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~6                                  ; |ALU|lpm_add_sub:Add0|addcore:adder|_~6                                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~7                                  ; |ALU|lpm_add_sub:Add0|addcore:adder|_~7                                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~8                                  ; |ALU|lpm_add_sub:Add0|addcore:adder|_~8                                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~11                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~11                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~12                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~12                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~13                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~13                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~14                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~14                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~15                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~15                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~18                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~18                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~19                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~19                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~20                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~20                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~21                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~21                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~25                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~25                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~26                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~26                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~27                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~27                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~28                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~28                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7] ; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]      ; sout             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]~COUT ; cout             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]      ; sout             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]~COUT ; cout             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]      ; sout             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]~COUT ; cout             ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                    ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+; Node Name                                                                ; Output Port Name                                                              ; Output Port Type ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+; |ALU|T0~27                                                               ; |ALU|T0~27                                                                    ; out0             ;
+; |ALU|T0~30                                                               ; |ALU|T0~30                                                                    ; out0             ;
+; |ALU|T0~31                                                               ; |ALU|T0~31                                                                    ; out0             ;
+; |ALU|T0~32                                                               ; |ALU|T0~32                                                                    ; out0             ;
+; |ALU|T0~33                                                               ; |ALU|T0~33                                                                    ; out0             ;
+; |ALU|T0~34                                                               ; |ALU|T0~34                                                                    ; out0             ;
+; |ALU|x[3]                                                                ; |ALU|x[3]                                                                     ; out              ;
+; |ALU|x[4]                                                                ; |ALU|x[4]                                                                     ; out              ;
+; |ALU|x[5]                                                                ; |ALU|x[5]                                                                     ; out              ;
+; |ALU|x[6]                                                                ; |ALU|x[6]                                                                     ; out              ;
+; |ALU|x[7]                                                                ; |ALU|x[7]                                                                     ; out              ;
+; |ALU|y[3]                                                                ; |ALU|y[3]                                                                     ; out              ;
+; |ALU|y[4]                                                                ; |ALU|y[4]                                                                     ; out              ;
+; |ALU|y[5]                                                                ; |ALU|y[5]                                                                     ; out              ;
+; |ALU|y[6]                                                                ; |ALU|y[6]                                                                     ; out              ;
+; |ALU|y[7]                                                                ; |ALU|y[7]                                                                     ; out              ;
+; |ALU|lpm_add_sub:Add1|result_node[5]                                     ; |ALU|lpm_add_sub:Add1|result_node[5]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add1|result_node[6]                                     ; |ALU|lpm_add_sub:Add1|result_node[6]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add1|result_node[7]                                     ; |ALU|lpm_add_sub:Add1|result_node[7]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add1|result_node[8]                                     ; |ALU|lpm_add_sub:Add1|result_node[8]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[0]                             ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~0                                  ; |ALU|lpm_add_sub:Add1|addcore:adder|_~0                                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~1                                  ; |ALU|lpm_add_sub:Add1|addcore:adder|_~1                                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~2                                  ; |ALU|lpm_add_sub:Add1|addcore:adder|_~2                                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~3                                  ; |ALU|lpm_add_sub:Add1|addcore:adder|_~3                                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[8]~1                      ; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[8]~1                           ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[8]                        ; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[8]                             ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[7]                        ; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[7]                             ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[6]                        ; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[6]                             ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[5]                        ; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[5]                             ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[4]                        ; |ALU|lpm_add_sub:Add1|addcore:adder|datab_node[4]                             ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[8]~1                  ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[8]~1                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[7]~2                  ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[7]~2                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[6]~3                  ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[6]~3                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]~4                  ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]~4                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]~5                  ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]~5                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[8]                    ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[8]                         ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[7]                    ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[7]                         ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[6]                    ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[6]                         ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]                    ; |ALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]                         ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~4                                  ; |ALU|lpm_add_sub:Add1|addcore:adder|_~4                                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~5                                  ; |ALU|lpm_add_sub:Add1|addcore:adder|_~5                                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~6                                  ; |ALU|lpm_add_sub:Add1|addcore:adder|_~6                                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~7                                  ; |ALU|lpm_add_sub:Add1|addcore:adder|_~7                                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~8                                  ; |ALU|lpm_add_sub:Add1|addcore:adder|_~8                                       ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~12                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~12                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~13                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~13                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~14                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~14                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~15                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~15                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~16                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~16                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~20                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~20                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~21                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~21                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~22                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~22                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~23                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~23                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~28                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~28                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~29                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~29                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~30                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~30                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~31                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~31                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|_~32                                 ; |ALU|lpm_add_sub:Add1|addcore:adder|_~32                                      ; out0             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[8] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[8]      ; sout             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]~COUT ; cout             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]      ; sout             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]~COUT ; cout             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]      ; sout             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]~COUT ; cout             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]      ; sout             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]~COUT ; cout             ;
+; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |ALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |ALU|lpm_add_sub:Add0|result_node[5]                                     ; |ALU|lpm_add_sub:Add0|result_node[5]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add0|result_node[6]                                     ; |ALU|lpm_add_sub:Add0|result_node[6]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add0|result_node[7]                                     ; |ALU|lpm_add_sub:Add0|result_node[7]                                          ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~2                                  ; |ALU|lpm_add_sub:Add0|addcore:adder|_~2                                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[7]~1                      ; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[7]~1                           ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[7]                        ; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[7]                             ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[6]                        ; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[6]                             ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[5]                        ; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[5]                             ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[4]                        ; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[4]                             ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; |ALU|lpm_add_sub:Add0|addcore:adder|datab_node[3]                             ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]~1                  ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]~1                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]~2                  ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]~2                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]~3                  ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]~3                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~4                  ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~4                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~5                  ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~5                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]                    ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]                         ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]                    ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]                         ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]                    ; |ALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]                         ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~4                                  ; |ALU|lpm_add_sub:Add0|addcore:adder|_~4                                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~5                                  ; |ALU|lpm_add_sub:Add0|addcore:adder|_~5                                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~6                                  ; |ALU|lpm_add_sub:Add0|addcore:adder|_~6                                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~7                                  ; |ALU|lpm_add_sub:Add0|addcore:adder|_~7                                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~8                                  ; |ALU|lpm_add_sub:Add0|addcore:adder|_~8                                       ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~11                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~11                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~12                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~12                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~13                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~13                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~14                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~14                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~15                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~15                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~18                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~18                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~19                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~19                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~20                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~20                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~21                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~21                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~25                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~25                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~26                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~26                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~27                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~27                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|_~28                                 ; |ALU|lpm_add_sub:Add0|addcore:adder|_~28                                      ; out0             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7] ; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]      ; sout             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]~COUT ; cout             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]      ; sout             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]~COUT ; cout             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]      ; sout             ;
+; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |ALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]~COUT ; cout             ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Dec 11 20:18:52 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ALU -c ALU
+Info: Using vector source file "E:/课程/数字电路与逻辑设计/实验/CPU设计/模型机运运算器ALU/ALU.vwf"
+Warning: Ignored node in vector source file. Can't find corresponding node name "T[8]" in design.
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      54.33 %
+Info: Number of transitions in simulation is 75179
+Info: Quartus II Simulator was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 163 megabytes
+    Info: Processing ended: Wed Dec 11 20:18:53 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
